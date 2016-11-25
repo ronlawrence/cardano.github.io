@@ -1,2 +1,3 @@
 name: Cardano Engineering
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
