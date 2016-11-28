@@ -2,6 +2,10 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon'/ >
   <title>{{ page.title }}</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
@@ -21,10 +25,10 @@
   </div>
   <footer>
     <ul>
-      <li><a href="mailto:engineering@cardano.com">email</a></li>
-      <li><a href="http://github.com/cardano">github</a></li>
-      <li><a href="http://www.cardano.com">web</a></li>
-      <li><a href="https://cardano.github.io/blog/atom.xml">rss</a></li>
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li><a href="http://github.com/cardano">github.com/cardano</a></li>
+      <li><a href="http://www.cardano.com">www.cardano.com</a></li>
+      <li><a href="/blog/atom.xml">atom</a></li>
     </ul>
   </footer>
 </body>
