@@ -1,4 +1,4 @@
-name: Cardano Engineering 2
+name: Cardano Engineering
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 url: https://cardano.github.io
