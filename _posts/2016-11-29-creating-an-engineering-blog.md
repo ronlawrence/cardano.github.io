@@ -2,6 +2,7 @@
 layout: post
 title: "Creating an Engineering Blog with Github Pages"
 date: 2016-11-29
+author: alison_johnston
 categories: update cardano github-pages jekyll
 ---
 
@@ -12,6 +13,8 @@ As part of our platform uplift we wanted to start giving back to the community a
 Creating a Site
 ---
 You can create a site with no local development by creating and editing the site directly on github.  Github runs Jekyll when you commit then it deploys your site.
+
+Personally I created the site initially following the excellent guide by [Jonathon Mcglone](http://jmcglone.com/guides/github-pages).  Then to customise, add Bootstrap etc I pulled down the project locally, installed Jekly and used Visual Studio Code, on my Mac at home and Windows at work.
 
 I am not going to add a full tutorial when there is a great one already from [Jonathon Mcglone](http://jmcglone.com/guides/github-pages) or [Barry Clark](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/).
 
