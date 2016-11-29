@@ -4,7 +4,6 @@ description: > # This mean ignore until the next property
   ideas, successes and failures with the world to help anyone looking to do the 
   same with their organisation.
 markdown: kramdown
-theme: minima
 permalink: /blog/:year/:month/:day/:title
 url: https://cardano.github.io
 email: engineering@cardano.com
