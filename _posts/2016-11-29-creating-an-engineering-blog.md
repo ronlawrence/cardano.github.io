@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Creating an Engineering Blog with Github Pages"
+title: "Creating an Engineering Blog with GitHub Pages"
 date: 2016-11-29
 author: alison_johnston
-categories: update cardano github-pages jekyll
+categories: update cardano github-pages Jekyll
 ---
 
 So You Want to Setup A Blog
 ---
-As part of our platform uplift we wanted to start giving back to the community and sharing our experiences, which means we need a blog.  Github pages is a great way to setup a free static website and it includes Jekyll which provides a great way to setup a blog.  Your content is just static markdown pages which you commit to github, just like code.  We could have gone with something more elborate like wordpress or drupal with a database behind it and the related complications but this seems a natural and great starting point for a web development team.  The team starts using github and the github flow branching strategy just as they will be doing with code.  
+As part of our platform uplift we wanted to start giving back to the community and sharing our experiences, which means we need a blog.  GitHub pages is a great way to setup a free static website and it includes Jekyll which provides a great way to setup a blog.  Your content is just static markdown pages which you commit to github, just like code.  We could have gone with something more elaborate like WordPress or Drupal with a database behind it and the related complications but this seems a natural and great starting point for a web development team.  The team starts using github and the github flow branching strategy just as they will be doing with code.  
 
 Creating a Site
 ---
-You can create a site with no local development by creating and editing the site directly on github.  Github runs Jekyll when you commit then it deploys your site.
+You can create a site with no local development by creating and editing the site directly on github.  GitHub runs Jekyll when you commit then it deploys your site.
 
-Personally I created the site initially following the excellent guide by [Jonathon Mcglone](http://jmcglone.com/guides/github-pages).  Then to customise, add Bootstrap etc I pulled down the project locally, installed Jekly and used Visual Studio Code, on my Mac at home and Windows at work.
+Personally I created the site initially following the excellent guide by [Jonathon Mcglone](http://jmcglone.com/guides/github-pages).  Then to customise, add Bootstrap etc I pulled down the project locally, installed Jekyll and used Visual Studio Code, on my Mac at home and Windows at work.
 
 I am not going to add a full tutorial when there is a great one already from [Jonathon Mcglone](http://jmcglone.com/guides/github-pages) or [Barry Clark](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/).
 
@@ -38,11 +38,11 @@ Install Jekyll
 
   OSX
 
-  * Follow the [Jekyll instuctions](https://jekyllrb.com/docs/installation/) to install as a Ruby Gem.
+  * Follow the [Jekyll instructions](https://jekyllrb.com/docs/installation/) to install as a Ruby Gem.
 
 To run the site goto to site root folder and run `jekyll serve --watch`  
 
-Install gihub pages gems `gem install github-pages`.
+Install GitHub Pages gem `gem install github-pages`.
 
 If you get an error here like 
 
