@@ -2,6 +2,7 @@
 layout: post
 title: "Cardano Engineering Launches Site"
 date: 2016-11-25
+author: alison_johnston
 categories: update Cardano Engineering
 ---
 
