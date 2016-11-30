@@ -8,7 +8,9 @@ categories: update cardano github-pages Jekyll
 
 So You Want to Setup A Blog
 ---
-As part of our platform uplift we wanted to start giving back to the community and sharing our experiences, which means we need a blog.  GitHub pages is a great way to setup a free static website and it includes Jekyll which provides a great way to setup a blog.  Your content is just static markdown pages which you commit to github, just like code.  We could have gone with something more elaborate like WordPress or Drupal with a database behind it and the related complications but this seems a natural and great starting point for a web development team.  The team starts using github and the github flow branching strategy just as they will be doing with code.  
+As part of our platform uplift we wanted to start giving back to the community and sharing our experiences, which means we need a blog.  GitHub pages is a great way to setup a free static website and it includes Jekyll which provides a great way to setup a blog.  Your content is just static markdown pages which you commit to github, just like code.  
+
+We could have gone with something more elaborate like WordPress or Drupal with a database behind it and the related complications but this seems a natural and great starting point for a web development team.  The team starts using github and the github flow branching strategy just as they will be doing with code.  
 
 Creating a Site
 ---
@@ -54,15 +56,33 @@ then run `gem install public_suffix -v 1.5.3`
 
 Styling
 ---
-We wanted to add bootstrap styling and our logo so inside the assets folder (which is copied to the _site folder) I added an images folder with our favicon and logo then added this to the _layouts/default.html in the header.
+We wanted to add bootstrap styling and our own stylesheet.  You can take a look at our code.
 
-Header
+[_layouts/default.html](https://github.com/cardano/cardano.github.io/blob/master/_layouts/default.html)
+
+```js
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
+  ...
+</head>  
+```
+
+```js
+<body>
+  ...
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+```
+
+Next is and our logo so inside the assets folder (which is copied to the _site folder) I added an images folder with our favicon and logo then added this in the header.
 
 ```js
 <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
 ```
 
-Body
+then the logo svg in the Body
 
 ```js
 <a href="/" class="navbar-brand">
