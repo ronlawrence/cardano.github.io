@@ -1,0 +1,25 @@
+{
+    "language": "en_US",
+    "ignoreWordsList": [
+        "Cardano",
+        "cardano",
+        "blog",
+        "GitHub",
+        "dropdown",
+        "Blog",
+        "johnston",
+        "alison",
+        "WordPress",
+        "customise",
+        "Drupal",
+        "organisation"
+    ],
+    "documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "ignoreRegExp": [],
+    "ignoreFileExtensions": [],
+    "checkInterval": 5000
+}

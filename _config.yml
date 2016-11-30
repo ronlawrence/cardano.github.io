@@ -8,3 +8,4 @@ email: engineering@cardano.com
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 exclude: [docs/, lib/, scripts/]
+port: 4001
