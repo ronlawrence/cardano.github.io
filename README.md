@@ -16,6 +16,7 @@ The first time you contribute you will need to get a copy of the code.  For subs
 ```shell
 git checkout https://github.com/cardano/cardano.github.io.git
 ```
+### Initial and Subsequent Commits
 * Create a branch and switch to that branch.   For the {branch-name} replace this with the title of the blog.  Uses dashes not underscores.
 ```shell
 git checkout -b {branch-name}
@@ -40,5 +41,11 @@ git push -u origin {branch-name}
   * Click "New Pull Request".
   * Choose your new branch in the "compare" dropdown.
   * Enter requested details.
+* Add the CTO and ask him to take a look.
 * Look for comments and make any changes.
 * Once approved your changes will be merged and released then the branch deleted.
+
+### Helpful Links
+[Github Markdown](https://help.github.com/categories/writing-on-github/)
+
+[Markdown editing with Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
