@@ -57,6 +57,16 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    var fill = function() {
+      $('.fill-screen').css('width', window.innerWidth);
+    };
+    $(function() {
+      // on('load') does not seem to work on chrome, ok on safari.
+      fill();
+      $(window).on('resize', fill);
+    });
+  </script>
 </body>
 
 </html>

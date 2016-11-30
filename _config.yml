@@ -11,3 +11,6 @@ permalink: /blog/:year/:month/:day/:title
 exclude: [docs/, lib/, scripts/]
 
 port: 4001
+
+sass:
+    sass_dir: _sass
