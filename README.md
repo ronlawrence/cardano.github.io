@@ -1,10 +1,10 @@
 ![Cardano](http://cardano.github.io/cardano.github.io/assets/images/cardano_logo.svg)
 
 # Cardano Engineering
-Source for the home of Cardano Engineering [cardano.github.io](cardano.github.io)
+Source for the home of Cardano Engineering [cardano.github.io](https://cardano.github.io)
 
 ## Visitors
-Please go to our site are [cardano.github.io](cardano.github.io) for information about Cardano and our engineering team.
+Please go to our site are [cardano.github.io](https://cardano.github.io) for information about Cardano and our engineering team.
 
 ## Contributors
 Please follow the [github flow](https://guides.github.com/introduction/flow/) to make changes.
