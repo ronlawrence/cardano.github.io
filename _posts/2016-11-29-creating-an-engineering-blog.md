@@ -19,7 +19,7 @@ For the markdown syntax see [basic writing and formatting syntax](https://help.g
 
 Running Jekyll Locally
 ---
-Install Jekyll
+As I said above you can do this without installing or running locally just by committing to GitHub.  However if you want to do some customisation and see how it looks before pushing then you need to install Jekyll.
 
   Windows
 
@@ -48,3 +48,21 @@ Unable to resolve dependencies: github-pages-health-check requires public_suffix
 ```
 
 then run `gem install public_suffix -v 1.5.3`
+
+Styling
+---
+We wanted to add bootstrap styling and our logo so inside the assets folder (which is copied to the _site folder) I added an images folder with our favicon and logo then added this to the _layouts/default.html in the header.
+
+Header
+
+```js
+<link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
+```
+
+Body
+
+```js
+<a href="/" class="navbar-brand">
+  <img src='/assets/images/cardano_logo.svg' />
+</a>
+```
