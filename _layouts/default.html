@@ -14,7 +14,7 @@
 <body>
 
   <header class="container">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top cbp-af-header" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-navbar-collapse">
@@ -24,7 +24,7 @@
             <span class="icon-bar"></span>
           </button>
           <a href="/" class="navbar-brand">
-            <img src='/assets/images/cardano_logo.svg' />
+            <img src='/assets/images/cardano-logo.svg' />
           </a>
         </div>
 
@@ -57,9 +57,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/assets/scripts/classie.js"></script>
+    <script src="/assets/scripts/cbpAnimatedHeader.js"></script>
   <script>
     var fill = function() {
-      $('.fill-screen').css('width', window.innerWidth);
+        $('.fill-screen').css('height', window.innerHeight - 100);
     };
     $(function() {
       // on('load') does not seem to work on chrome, ok on safari.
