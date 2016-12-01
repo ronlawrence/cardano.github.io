@@ -8,6 +8,7 @@
   <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
   <title>{{ page.title }}</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/animate.css"/>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
 </head>
 
@@ -57,18 +58,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="/assets/scripts/classie.js"></script>
-    <script src="/assets/scripts/cbpAnimatedHeader.js"></script>
-  <script>
-    var fill = function() {
-        $('.fill-screen').css('height', window.innerHeight - 100);
-    };
-    $(function() {
-      // on('load') does not seem to work on chrome, ok on safari.
-      fill();
-      $(window).on('resize', fill);
-    });
-  </script>
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/cbpAnimatedHeader.js"></script>
+  <script src="/assets/scripts/wow.js"></script>
+  <script src="/assets/scripts/fill-screen.js"></script>
+  <script src="/assets/scripts/initialise-animate.js"></script>
 </body>
 
 </html>

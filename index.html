@@ -14,28 +14,27 @@ title: Cardano Engineering
   <img src="./assets/images/string-phone.png" class='img-responsive'>
 </div>
 
-<div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-upright.jpg)"></div>
+<div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-upright.png)"></div>
 
-
-<div id="goal" class="welcome-element container-sm-height">
+<div id="goal" class="container-sm-height welcome-element">
   <div class="row-sm-height">
-    <div class="col-sm-height">
+    <div class="col-sm-height wow bounceInDown">
       <img class="icon" src="./assets/images/target.png">
     </div>
     <div class="col-sm-height">
-      <h1>The goal</h1>
-      <p>Cardano needs to evolve to building modern web applications capable of being managed and hosted on the cloud.</p>
+      <h1 class="wow bounceInRight">The goal</h1>
+      <p class="wow bounceInUp">Cardano needs to evolve to building modern web applications capable of being managed and hosted on the cloud.</p>
     </div>
   </div>
 </div>
 
-<div class="fill-screen">
-  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.jpg)">
+<div>
+  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.png)">
 </div>
 
-<div id="challenge" class="welcome-element container-sm-height">
-  <div class="row-sm-height">
-    <div class="col-sm-height">
+<div id="challenge" class="container-sm-height welcome-element">
+  <div class="row-sm-height wow swing center">
+    <div class="col-sm-height wow swing center">
       <img class="icon" src="./assets/images/house.png">
     </div>
     <div class="col-sm-height">
@@ -45,22 +44,43 @@ title: Cardano Engineering
   </div>
 </div>
 
-<div class="fill-screen">
-  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.jpg)">
+<div>
+  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.png)">
 </div>
 
-<div id="team" class="welcome-element container-sm-height">
+<div id="team" class="container-sm-height welcome-element">
   <div class="row-sm-height">
     <div class="col-sm-height">
-      <img class="icon" src="./assets/images/house.png">
+      <img class="icon" src="./assets/images/jersey.png">
     </div>
     <div class="col-sm-height">
       <h1>The Team</h1>
-      <img class="avatar" src="./assets/images/avatars/alison.png">
+      {% for image in site.static_files %}
+        {% if image.path contains 'images/avatars' %}
+          <img class="avatar" src="{{ image.path }}" alt="image" />
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
 
-<div class="fill-screen">
-  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.jpg)">
+<div>
+  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.png)">
 </div>
+
+
+<div id="blog" class="container-sm-height welcome-element">
+  <div class="row-sm-height">
+    <div data-wow-iteration="5" data-wow-duration="0.15s" class="col-sm-height span3 wow flip" style="visibility: visible; animation-duration: 0.15s; animation-iteration-count: 5;">
+      <img class="icon" src="./assets/images/book.png">
+    </div>
+    <div class="col-sm-height wow pulse animated" data-wow-delay="2000ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+      <h1>The challenge</h1>
+      <p>Follow the progress via our
+        <a href="/blog">blog</a>
+        where they will keep you posted on what they learn, what works, what doesn't and how their solutions</p>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-attachment" style="background-image: "></div>
