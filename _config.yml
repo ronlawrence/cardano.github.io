@@ -11,6 +11,9 @@ permalink: /blog/:year/:month/:day/:title
 exclude: [docs/, lib/, scripts/]
 
 port: 4001
+# Listen on all interface so can connect from mobile on same network
+# https://stackoverflow.com/questions/16608466/connect-to-a-locally-built-jekyll-server-using-mobile-devices-in-the-lan
+host: 0.0.0.0
 
 sass:
     sass_dir: _sass
