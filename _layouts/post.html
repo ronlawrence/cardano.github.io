@@ -8,8 +8,12 @@ layout: default
 <p class="meta">
   {% if author %}
   <span>
-    <!-- Personal Info. -->
-    by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+    {% if author.photo %}
+      <a href="{{ author.web }}" target="_blank">
+        <img src="{{ author.photo }}">
+      </a>
+    {% endif %}
+    <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
   </span>
   {% endif %}
   {{ page.date | date_to_string }}
