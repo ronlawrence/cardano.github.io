@@ -50,20 +50,27 @@ title: Cardano Engineering
 
 <div id="team" class="container-sm-height welcome-element">
   <div class="row-sm-height">
-    <div class="col-sm-height">
+    <div class="col-sm-height wow rollIn"
+        data-wow-delay="0.5s"
+        style="visibility: visible; animation-delay: 0.5s; animation-name: rollIn;">
       <img class="icon" src="./assets/images/jersey.png">
     </div>
     <div class="col-sm-height">
       <h1>The Team</h1>
+      {% assign i = 0.0 %}
       {% for image in site.static_files %}
         {% if image.path contains 'images/avatars' %}
-          <img class="avatar" src="{{ image.path }}" alt="image" />
+          {% assign i = i | plus: 0.1 %}
+          <img class="avatar span3 wow bounceInRight center" 
+               data-wow-delay="{{ i }}s" 
+               style="visibility: visible; animation-delay: {{ i }}s; animation-name: bounceInRight;" 
+               src="{{ image.path }}" alt="image" />
         {% endif %}
       {% endfor %}
     </div>
   </div>
 </div>
-
+            
 <div>
   <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.png)">
 </div>
