@@ -14,7 +14,7 @@ The first time you contribute you will need to get a copy of the code.  For subs
 * Change to the parent directory in which you want to place the project.
 * Download the project to your machine:
 ```shell
-git checkout https://github.com/cardano/cardano.github.io.git
+git clone https://github.com/cardano/cardano.github.io.git
 ```
 ### Initial and Subsequent Commits
 * Create a branch and switch to that branch.   For the {branch-name} replace this with the title of the blog.  Uses dashes not underscores.
