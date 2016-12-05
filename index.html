@@ -59,21 +59,21 @@ title: Cardano Engineering
       <h1>The Team</h1>
       <ul>
       {% assign i = 0.0 %}
-      {% for image in site.static_files %}
-        {% if image.path contains 'images/avatars' %}
+      {% for author in site.data.authors %}
+      {% if author[1].photo %}
           {% assign i = i | plus: 0.1 %}
           <li>
             <figure>
               <img class="span3 wow bounceInRight center"
                   data-wow-delay="{{ i }}s"
                   style="visibility: visible; animation-delay: {{ i }}s; animation-name: bounceInRight;"
-                  src="{{ image.path }}" alt="image" />
+                  src="{{ author[1].photo }}" alt="image" />
               <figcaption>
-                <p>Alison Johnston</p>
+                <p>{{ author[1].name }}</p>
               </figcaption>
             </figure>
           </li>
-        {% endif %}
+      {% endif %}
       {% endfor %}
       </ul>
     </div>
