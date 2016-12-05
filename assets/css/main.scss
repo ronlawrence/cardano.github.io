@@ -141,17 +141,74 @@ ul.posts {
   .icon {
     padding-right: 2em;
   }
-  .avatar {
-    height: 4em;
-    width: 4em;
-    padding: .15em 0em;
-  }
+
+  // .team-avatar {  
+  //   display: inline;
+  //   img {
+  //     height: 4em;
+  //     width: 4em;
+  //     padding: .15em 0em;
+  //   }
+    // .team-description {
+    //   height: 100%;
+    //   width: 100%;
+    //   top: auto;
+    //   bottom: 0;
+    //   opacity: 0;
+    // }
+  // }
+
   a {
     text-decoration: none;
     color: $welcome-element-link-colour;
     &:hover {
         text-decoration: underline;
         color: $welcome-element-hover-link-colour;
+    }
+  }
+}
+
+#team {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  ul li {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: 0 1em 1em 0;
+    position: relative;
+
+    img {
+      height: 7m;
+      width: 7em;
+    }
+
+    figcaption {
+      background: rgba(0,0,0,0.5);
+      cursor: pointer;
+      left: 0;
+      top: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      padding: .5em;
+      opacity: 0;
+      p {
+        font-size: 1em;
+        color: white;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      -webkit-transition: opacity 500ms;
+      -moz-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;
     }
   }
 }
