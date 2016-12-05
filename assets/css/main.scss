@@ -15,11 +15,11 @@ h1 {
   font-family:  "Gotham A", "Gotham B", 'Arial', 'Helvetica', 'Sans-Serif';
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: $heading-colour-1;
 }
 h2 {
-  font-size: 2.0em;
+  font-size: 1.3em;
 }
 
 h2,h3,h4,h5,h6 {
@@ -189,10 +189,13 @@ ul.posts {
 
 @media (min-width: 768px) {
   body {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   h1 {
-    font-size: 2.5em;
+    font-size: 1.6em;
+  }
+  h2{
+    font-size: 1.3em;
   }
   .jumbotron {
     padding-bottom: 1.5em;
