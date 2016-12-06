@@ -22,7 +22,7 @@ e.barnardt:
 g.carpentieri:
     name: Giampietro Carpentieri
     web: 
-    photo: 
+    photo: /assets/images/avatars/giampietro.png
 i.butler:
     name: Ian Butler
     web: 
@@ -42,7 +42,7 @@ j.lee:
 k.bouwman:
     name: Kees Bouwman
     web: 
-    photo: 
+    photo: /assets/images/avatars/kees.png
 m.conen:
     name: Maryn Conen
     web: 
@@ -50,7 +50,7 @@ m.conen:
 m.messer:
     name: Marion Messer
     web: 
-    photo: 
+    photo: /assets/images/avatars/marion.png
 m.neep:
     name: Michael Neep
     web: 
@@ -58,7 +58,7 @@ m.neep:
 m.rybacki:
     name: Marcin Rybacki
     web: 
-    photo: 
+    photo: /assets/images/avatars/marcin.png
 n.olsthoorn:
     name: Niels Olsthoorn
     web: 
@@ -78,7 +78,7 @@ r.lange:
 r.lord:
     name: Roger Lord
     web: 
-    photo: 
+    photo: /assets/images/avatars/roger.png
 s.degroot:
     name: Sander de Groot
     web: 
