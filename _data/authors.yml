@@ -79,6 +79,10 @@ r.lord:
     name: Roger Lord
     web: 
     photo: /assets/images/avatars/roger.png
+r.lopes:
+    name: Ricardo Lopes
+    web: 
+    photo: /assets/images/avatars/ricardo.png
 s.degroot:
     name: Sander de Groot
     web: 
