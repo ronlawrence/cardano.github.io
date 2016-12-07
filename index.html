@@ -63,7 +63,9 @@ title: Cardano Engineering
       {% if author[1].photo %}
           {% assign i = i | plus: 0.1 %}
           <li>
-            <figure>
+            <!-- onclick="void(0)" so hover works on iOS -->
+            <!-- https://css-tricks.com/forums/topic/click-function-for-hover-states-on-touch-devices/page/2/ -->
+            <figure onclick="void(0)">
               <img class="span3 wow bounceInRight center"
                   data-wow-delay="{{ i }}s"
                   style="visibility: visible; animation-delay: {{ i }}s; animation-name: bounceInRight;"
