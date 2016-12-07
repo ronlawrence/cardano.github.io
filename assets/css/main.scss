@@ -3,6 +3,8 @@
 
 @import "colours";
 
+$iphone-screen: 768px;
+
 body {
   font-family: "Gotham A", "Gotham B", 'Arial', 'Helvetica', 'Sans-Serif';
   font-style: normal;
@@ -218,17 +220,23 @@ ul.posts {
 }
 
 .fill-screen {
-    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
     background-position: center;
+}
+
+.fixed-attachment {
+  // fixed does not work for iOS.  Image does not show.
+  // http://stackoverflow.com/questions/18429620/css-background-size-cover-replacement-for-mobile-safari mkubilayk
+  background-attachment: scroll;
 }
 
 .img-responsive {
     margin: 0px auto;
     width: 100%;
-}
-
-.fixed-attachment {
-  background-attachment: fixed;
 }
 
 .container-sm-height {
@@ -244,7 +252,7 @@ ul.posts {
   float:none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $iphone-screen) {
   body {
     font-size: 1.5em;
   }
@@ -285,5 +293,11 @@ ul.posts {
   }
   .welcome-element {
     padding: 7em 1em;
+  }
+
+  .fixed-attachment {
+    // fixed does not work for iOS.  Image does not show.
+    // http://stackoverflow.com/questions/18429620/css-background-size-cover-replacement-for-mobile-safari mkubilayk
+    background-attachment: fixed;
   }
 }
