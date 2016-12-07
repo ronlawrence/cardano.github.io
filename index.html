@@ -3,16 +3,101 @@ layout: default
 title: Cardano Engineering
 ---
 
+<div id="welcome" class="fill-screen">
 	<div class="jumbotron">
 		<h1>Cardano Engineering</h1>
-		<p>Engineering the future of pensions and financial risk management</p>
+		<p>The Engineering Team at Cardano Financial Services.</p>
+  </div>
+  <div>
+    <h2 class=>Rethinking our IT engineering for a better outcome</h2>
   </div>
   <img src="./assets/images/string-phone.png" class='img-responsive'>
-  <div id="welcome">
-    <p>
-    Here at Cardano we moving our technology to a world class web based open platform and we want to share our thoughts, ideas, successes and failures with the world to help anyone looking to do the same with their organisation.
-    </p>
-    <p>
-    Follow our journey in <a href="/blog">our blogs</a> as our Software and Hardware Engineering team records the experience.
-    </p>
+</div>
+
+<div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-upright.png)"></div>
+
+<div id="goal" class="container-sm-height welcome-element">
+  <div class="row-sm-height">
+    <div class="col-sm-height wow bounceInDown">
+      <img class="icon" src="./assets/images/target.png">
+    </div>
+    <div class="col-sm-height">
+      <h1 class="wow bounceInRight">The goal</h1>
+      <p class="wow bounceInUp">Cardano needs to evolve to building modern web applications capable of being managed and hosted on the cloud.</p>
+    </div>
   </div>
+</div>
+
+<div>
+  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/desert-island-flipped.png)">
+</div>
+
+<div id="challenge" class="container-sm-height welcome-element">
+  <div class="row-sm-height wow swing center">
+    <div class="col-sm-height wow swing center">
+      <img class="icon" src="./assets/images/house.png">
+    </div>
+    <div class="col-sm-height">
+      <h1>The challenge</h1>
+      <p>An application landscape that has grown and evolved over 15 years with various technologies and ideologies.  Time for some house rennovations!</p>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/bicycle.png)">
+</div>
+
+<div class="container-sm-height welcome-element" id="team" >
+  <div class="row-sm-height">
+    <div class="col-sm-height wow rollIn"
+        data-wow-delay="0.5s"
+        style="visibility: visible; animation-delay: 0.5s; animation-name: rollIn;">
+      <img class="icon" src="./assets/images/jersey.png">
+    </div>
+    <div class="col-sm-height">
+      <h1>The Team</h1>
+      <ul>
+      {% assign i = 0.0 %}
+      {% for author in site.data.authors %}
+      {% if author[1].photo %}
+          {% assign i = i | plus: 0.1 %}
+          <li>
+            <!-- onclick="void(0)" so hover works on iOS -->
+            <!-- https://css-tricks.com/forums/topic/click-function-for-hover-states-on-touch-devices/page/2/ -->
+            <figure onclick="void(0)">
+              <img class="span3 wow bounceInRight center"
+                  data-wow-delay="{{ i }}s"
+                  style="visibility: visible; animation-delay: {{ i }}s; animation-name: bounceInRight;"
+                  src="{{ author[1].photo }}" alt="image" />
+              <figcaption>
+                <p>{{ author[1].name }}</p>
+              </figcaption>
+            </figure>
+          </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="fill-screen fixed-attachment" style="background-image: url(./assets/images/rocket.png)">
+</div>
+
+<div id="blog" class="container-sm-height welcome-element">
+  <div class="row-sm-height">
+    <div data-wow-iteration="5" data-wow-duration="0.15s" class="col-sm-height span3 wow flip" style="visibility: visible; animation-duration: 0.15s; animation-iteration-count: 5;">
+      <img class="icon" src="./assets/images/book.png">
+    </div>
+    <div class="col-sm-height wow pulse animated" data-wow-delay="750ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+      <h1>The challenge</h1>
+      <p>Follow the progress via our
+        <a href="/blog">blog</a>
+        where they will keep you posted on what they learn, what works, what doesn't and how their solutions</p>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-attachment" style="background-image: "></div>

@@ -2,7 +2,7 @@
 layout: post
 title: "Creating an Engineering Blog with GitHub Pages"
 date: 2016-11-29
-author: alison_johnston
+author: a.johnston
 categories: update cardano github-pages Jekyll
 ---
 

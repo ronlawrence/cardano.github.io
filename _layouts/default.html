@@ -5,16 +5,18 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6907712/671986/css/fonts.css"/>
+  <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/animate.css"/>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
 </head>
 
 <body>
 
   <header class="container">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top cbp-af-header" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-navbar-collapse">
@@ -24,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
           <a href="/" class="navbar-brand">
-            <img src='/assets/images/cardano_logo.svg' />
+            <img src='/assets/images/cardano-logo.svg' />
           </a>
         </div>
 
@@ -57,16 +59,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script>
-    var fill = function() {
-      $('.fill-screen').css('width', window.innerWidth);
-    };
-    $(function() {
-      // on('load') does not seem to work on chrome, ok on safari.
-      fill();
-      $(window).on('resize', fill);
-    });
-  </script>
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/cbpAnimatedHeader.js"></script>
+  <script src="/assets/scripts/wow.js"></script>
+  <script src="/assets/scripts/fill-screen.js"></script>
+  <script src="/assets/scripts/initialise-animate.js"></script>
 </body>
 
 </html>
