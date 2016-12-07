@@ -1,101 +1,113 @@
 # Author details.
-a.coetzee:
+a.coetzee
     name: Adele Coetzee
-    web: 
-    photo: /assets/images/avatars/adele.png
-a.johnston:
+    web:
+    photo: assets/images/avatars/adele.png
+a.arikan
+    name: Ali Ferda Arikan
+    web:
+    photo: assets/images/avatars/ali.png
+a.johnston
     name: Alison Johnston
-    web: https://uk.linkedin.com/in/alisonjohnstonuk
-    photo: /assets/images/avatars/alison.png
-b.lozickaja:
+    web:
+    photo: assets/images/avatars/alison.png
+b.lozickaja
     name: Beata Lozickaja
-    web: 
-    photo: /assets/images/avatars/beata.png
-d.perkins:
+    web:
+    photo: assets/images/avatars/beata.png
+d.perkins
     name: David Perkins
-    web: 
-    photo: /assets/images/avatars/david.png
-e.barnardt:
+    web:
+    photo: assets/images/avatars/david.png
+e.barnardt
     name: Eugene Barnardt
-    web: 
-    photo: /assets/images/avatars/eugene.png
-g.carpentieri:
+    web:
+    photo: assets/images/avatars/eugene.png
+g.carpentieri
     name: Giampietro Carpentieri
-    web: 
-    photo: /assets/images/avatars/giampietro.png
-i.butler:
+    web:
+    photo: assets/images/avatars/giampietro.png
+i.butler
     name: Ian Butler
-    web: 
-    photo: /assets/images/avatars/ian.png
-j.adriaansen:
+    web:
+    photo: assets/images/avatars/ian.png
+j.adriaansen
     name: Jaco Adriaansen
-    web: 
-    photo: /assets/images/avatars/jaco.png
-j.gleeson:
-    name: Jim Gleeson
-    web: 
-    photo: /assets/images/avatars/jim.png
-j.lee:
+    web:
+    photo: assets/images/avatars/jaco.png
+j.crawley
+    name: James Crawley
+    web:
+    photo: assets/images/avatars/james.png
+j.lee
     name: Jason Lee
-    web: 
-    photo: /assets/images/avatars/jason.png
-k.bouwman:
+    web:
+    photo: assets/images/avatars/jason.png
+j.gleeson
+    name: Jim Gleeson
+    web:
+    photo: assets/images/avatars/jim.png
+k.bouwman
     name: Kees Bouwman
-    web: 
-    photo: /assets/images/avatars/kees.png
-m.conen:
-    name: Maryn Conen
-    web: 
-    photo: /assets/images/avatars/maryn.png
-m.messer:
-    name: Marion Messer
-    web: 
-    photo: /assets/images/avatars/marion.png
-m.neep:
-    name: Michael Neep
-    web: 
-    photo: /assets/images/avatars/mike.png
-m.rybacki:
+    web:
+    photo: assets/images/avatars/kees.png
+m.rybacki
     name: Marcin Rybacki
-    web: 
-    photo: /assets/images/avatars/marcin.png
-n.olsthoorn:
+    web:
+    photo: assets/images/avatars/marcin.png
+m.messer
+    name: Marion Messer
+    web:
+    photo: assets/images/avatars/marion.png
+m.conen
+    name: Maryn Conen
+    web:
+    photo: assets/images/avatars/maryn.png
+m.neep
+    name: Michael Neep
+    web:
+    photo: assets/images/avatars/michael.png
+n.olsthoorn
     name: Niels Olsthoorn
-    web: 
-    photo: /assets/images/avatars/niels.png
-o.gomez:
+    web:
+    photo: assets/images/avatars/niels.png
+o.gomez
     name: Oscar Gomez
-    web: 
-    photo: /assets/images/avatars/oscar.png
-p.ghotra:
+    web:
+    photo: assets/images/avatars/oscar.png
+p.ghotra
     name: Parminder Singh Ghotra
-    web: 
-    photo: /assets/images/avatars/parminder.png
-r.lange:
-    name: Rolf Lange
-    web: 
-    photo: /assets/images/avatars/rolf.png
-r.lord:
-    name: Roger Lord
-    web: 
-    photo: /assets/images/avatars/roger.png
-r.lopes:
+    web:
+    photo: assets/images/avatars/parminder.png
+p.getrouw
+    name: Pierre Getrouw
+    web:
+    photo: assets/images/avatars/pierre.png
+r.lopes
     name: Ricardo Lopes
-    web: 
-    photo: /assets/images/avatars/ricardo.png
-s.degroot:
+    web:
+    photo: assets/images/avatars/ricardo.png
+r.lord
+    name: Roger Lord
+    web:
+    photo: assets/images/avatars/roger.png
+r.lange
+    name: Rolf Lange
+    web:
+    photo: assets/images/avatars/rolf.png
+s.groot
     name: Sander de Groot
-    web: 
-    photo: /assets/images/avatars/sander.png
-s.hale:
+    web:
+    photo: assets/images/avatars/sander.png
+s.hale
     name: Simon Hale
-    web: 
-    photo: /assets/images/avatars/simon.png
-t.ettes:
+    web:
+    photo: assets/images/avatars/simon.png
+t.ettes
     name: Twan Ettes
-    web: 
-    photo: /assets/images/avatars/twan.png
-v.thong:
-    name: Veliana Thongˀ
-    web: 
-    photo: /assets/images/avatars/veliana.png
+    web:
+    photo: assets/images/avatars/twan.png
+v.thong
+    name: Veliana Thong
+    web:
+    photo: assets/images/avatars/veliana.png
