@@ -1,7 +1,7 @@
 # Author details.
 a.coetzee:
     name: Adele Coetzee
-    web: 
+    web:
     photo: /assets/images/avatars/adele.png
 a.arikan:
     name: Ali Ferda Arikan
@@ -13,43 +13,47 @@ a.johnston:
     photo: /assets/images/avatars/alison.png
 b.lozickaja:
     name: Beata Lozickaja
-    web: 
+    web:
     photo: /assets/images/avatars/beata.png
 d.perkins:
     name: David Perkins
-    web: 
+    web:
     photo: /assets/images/avatars/david.png
 e.barnardt:
     name: Eugene Barnardt
-    web: 
+    web:
     photo: /assets/images/avatars/eugene.png
 g.carpentieri:
     name: Giampietro Carpentieri
-    web: 
+    web:
     photo: /assets/images/avatars/giampietro.png
 i.butler:
     name: Ian Butler
-    web: 
+    web:
     photo: /assets/images/avatars/ian.png
 j.adriaansen:
     name: Jaco Adriaansen
-    web: 
+    web:
     photo: /assets/images/avatars/jaco.png
+j.asafo:
+    name: John Asafo
+    web:
+    photo: /assets/images/avatars/johna.png
 j.crawley:
     name: James Crawley
     web:
     photo: /assets/images/avatars/james.png
 j.lee:
     name: Jason Lee
-    web: 
+    web:
     photo: /assets/images/avatars/jason.png
 j.gleeson:
     name: Jim Gleeson
-    web: 
+    web:
     photo: /assets/images/avatars/jim.png
 k.bouwman:
     name: Kees Bouwman
-    web: 
+    web:
     photo: /assets/images/avatars/kees.png
 m.rybacki:
     name: Marcin Rybacki
@@ -57,11 +61,11 @@ m.rybacki:
     photo: /assets/images/avatars/marcin.png
 m.conen:
     name: Maryn Conen
-    web: 
+    web:
     photo: /assets/images/avatars/maryn.png
 m.messer:
     name: Marion Messer
-    web: 
+    web:
     photo: /assets/images/avatars/marion.png
 m.conen:
     name: Maryn Conen
@@ -69,23 +73,23 @@ m.conen:
     photo: /assets/images/avatars/maryn.png
 m.neep:
     name: Michael Neep
-    web: 
+    web:
     photo: /assets/images/avatars/mike.png
 m.rybacki:
     name: Marcin Rybacki
-    web: 
+    web:
     photo: /assets/images/avatars/marcin.png
 n.olsthoorn:
     name: Niels Olsthoorn
-    web: 
+    web:
     photo: /assets/images/avatars/niels.png
 o.gomez:
     name: Oscar Gomez
-    web: 
+    web:
     photo: /assets/images/avatars/oscar.png
 p.ghotra:
     name: Parminder Singh Ghotra
-    web: 
+    web:
     photo: /assets/images/avatars/parminder.png
 p.getrouw:
     name: Pierre Getrouw
@@ -97,29 +101,29 @@ r.lopes:
     photo: assets/images/avatars/ricardo.png
 r.lange:
     name: Rolf Lange
-    web: 
+    web:
     photo: /assets/images/avatars/rolf.png
 r.lord:
     name: Roger Lord
-    web: 
+    web:
     photo: /assets/images/avatars/roger.png
 r.lopes:
     name: Ricardo Lopes
-    web: 
+    web:
     photo: /assets/images/avatars/ricardo.png
 s.degroot:
     name: Sander de Groot
-    web: 
+    web:
     photo: /assets/images/avatars/sander.png
 s.hale:
     name: Simon Hale
-    web: 
+    web:
     photo: /assets/images/avatars/simon.png
 t.ettes:
     name: Twan Ettes
-    web: 
+    web:
     photo: /assets/images/avatars/twan.png
 v.thong:
     name: Veliana Thongˀ
-    web: 
+    web:
     photo: /assets/images/avatars/veliana.png
