@@ -17,9 +17,10 @@ The first time you contribute you will need to get a copy of the code.  For subs
 git clone https://github.com/cardano/cardano.github.io.git
 ```
 ### Initial and Subsequent Commits
-* Create a branch and switch to that branch.   For the {branch-name} replace this with the title of the blog.  Uses dashes not underscores.
+* Create a branch and switch to that branch.   
+* For the **branch-name** replace this with the title of the blog.  Uses dashes not underscores.
 ```shell
-git checkout -b {branch-name}
+git checkout -b branch-name
 ```
 * Create a copy of an existing blog in the \_posts directory and rename the file with the date and subject.
 * Write your blog post. 
@@ -32,9 +33,9 @@ git add --all
 ```shell
 git commit -m "add a message about the blog"
 ```
-* Push the change to GitHub (replace {branch-name} with your branch name from above)
+* Push the change to GitHub (replace **branch-name** with your branch name from above)
 ```shell
-git push -u origin {branch-name}
+git push -u origin branch-name
 ```
 * Create a pull request.
   * Go to [Cardano github](https://github.com/cardano/cardano.github.io).
