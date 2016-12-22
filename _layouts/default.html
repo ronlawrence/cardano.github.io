@@ -5,12 +5,16 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>{{ page.title }}</title>
+  <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <!--Important for SEO -->
+  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6907712/671986/css/fonts.css"/>
   <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="/assets/css/animate.css"/>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
+  <!--This is a way of telling the Search Engine bots that your content is only available here.-->
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
 </head>
 
 <body>
@@ -26,7 +30,7 @@
             <span class="icon-bar"></span>
           </button>
           <a href="/" class="navbar-brand">
-            <img src='/assets/images/cardano-logo.svg' />
+            <img src='/assets/images/cardano-logo.svg' alt='Cardano Logo'/>
           </a>
         </div>
 

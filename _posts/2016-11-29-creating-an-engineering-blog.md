@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Creating an Engineering Blog with GitHub Pages"
+title: Creating an Engineering Blog with GitHub Pages
 date: 2016-11-29
 author: a.johnston
 categories: update cardano github-pages Jekyll
+description: How to create a free blog site using GitHub pages which has built in markdown support from Jekyll.  Includes setting up local environment for OSX or Windows.
 ---
 
 # So You Want to Setup A Blog
