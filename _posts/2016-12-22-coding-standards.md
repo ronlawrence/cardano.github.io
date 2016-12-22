@@ -16,11 +16,11 @@ So how do we fix this? Before we get to the solution a quote from Robert C. Mart
 
 The problem can be solved in two simple steps; the first step is to create a style guide and place it in an area where all team members can access it, such as a Wiki or on GitHub. Below is an example of how a style guide is laid out normally there is a topic with an example of a way and a bad way to write the code.
 
-![Style Code Example](../assets/images/post-images/code-example.png)
+![Style Code Example](/assets/images/post-images/code-example.png)
 
 The second step is to install a lint plug-in on your favourite Integrated Development Environment(IDE), once you have incorporated the style guide rules in your lint configuration, you are good to go. You will get instant feedback from your IDE as you write code, warning and error messages will appear if you break any of the style rules.
 
-![Lint Code Example](../assets/images/post-images/lint-example.png)
+![Lint Code Example](/assets/images/post-images/lint-example.png)
 
 An extra step, for those who use Git could be to add a git commit hook that checks the code against the lint rules before it allows you to commit.
 
