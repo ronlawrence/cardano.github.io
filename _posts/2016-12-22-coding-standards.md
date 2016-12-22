@@ -3,6 +3,7 @@ layout: post
 title: "Coding Standards"
 date: 2016-12-22
 author: j.asafo
+description: Coding standards are often a problem in real production environments, find out how we resolve these problems at Cardano Engineering.
 categories: style-guide best-practises lint
 ---
 
