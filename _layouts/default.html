@@ -15,6 +15,13 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
   <!--This is a way of telling the Search Engine bots that your content is only available here.-->
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  <!--Open graph for how cntent apears on linkd in and facebook etc-->
+  <!-- https://developers.facebook.com/docs/sharing/webmasters#markup-->
+  <meta property="og:url"                content="{{ site.url }}" />
+  <meta property="og:type"               content="Finance" />
+  <meta property="og:title"              content="{{ site.name }}" />
+  <meta property="og:description"        content="{{ site.description }}" />
+  <meta property="og:image"              content="{{ site.url }}/assets/images/cardano-logo.svg" />
 </head>
 
 <body>
