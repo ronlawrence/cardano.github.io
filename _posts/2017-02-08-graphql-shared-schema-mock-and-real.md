@@ -7,7 +7,7 @@ categories: cardano graphql mocking api
 description: Using API driven design with GraphQL to create mock data for a schema that is shared with the real data for a self documenting API.
 ---
 
-This article is not a [GraphQL](http://graphql.org/) tutorial but rather focuses on the specific case of mocking data with GraphQL.  It discusses some investigations I did into using GraphQL to rapidly create a mock service which helps the consumers and producers to rapidly agree up the api schema then use that exact schema to create provide the real data as well as a portal where users can try it out. If you know all about this stuff then jump to XXXX below, if not then read on to see how this is an efficient way to start projects.  
+This article is not a [GraphQL](http://graphql.org/) tutorial but rather focuses on the specific case of mocking data with GraphQL.  It discusses some investigations I did into using GraphQL to rapidly create a mock service which helps the consumers and producers to rapidly agree up the api schema then use that exact schema to create provide the real data as well as a portal where users can try it out. If you know all about this stuff then jump to [Setting up the Mocking](#setting-up-the-mocking) below, if not then read on to see how this is an efficient way to start projects.  
 
 # Why API Driven Design and W hy Graph QL
 Just as in the case of interface driven design in the world of Java or C#, API driven design means before any code is written the schema of the API has been agreed upon.  Providing mock data is quick and easy then allows the consumers to actually use the api and verify it is what they want.  This also means that both UI development can start before the real service is ready.
