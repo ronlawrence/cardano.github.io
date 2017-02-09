@@ -9,12 +9,12 @@ description: Using API driven design with GraphQL to create mock data for a sche
 
 This article is not a [GraphQL](http://graphql.org/) tutorial but rather focuses on the specific case of mocking data with GraphQL.  It discusses some investigations I did into using GraphQL to rapidly create a mock service which helps the consumers and producers to rapidly agree up the api schema then use that exact schema to create provide the real data as well as a portal where users can try it out. If you know all about this stuff then jump to [Setting up the Mocking](#setting-up-the-mocking) below, if not then read on to see how this is an efficient way to start projects.  
 
-# Why API Driven Design and W hy Graph QL
+# Why API Driven Design and Why Graph QL
 Just as in the case of interface driven design in the world of Java or C#, API driven design means before any code is written the schema of the API has been agreed upon.  Providing mock data is quick and easy then allows the consumers to actually use the api and verify it is what they want.  This also means that both UI development can start before the real service is ready.
 
 In this sample both the initial mock is the start of the final service, it is the actual project.  Because [GraphQL](http://graphql.org/) uses a schema we create the schema and provide mock data then deploy where the UI developers can access it.  Then the api developers start to fill out the real data using exactly the same schema.  No chance of getting out of sync with the mock.  If one changes, the other changes.  Whilst I really like [Apiary](https://apiary.io/) and even [Apigee](https://apigee.com/) they are separate from your project so need syncing and rely on developers to remember.  They do some checks and may even code gen but with GraphQL and mocking you are always in the real project.
 
-I strongly reading up on [GraphQL](http://graphql.org/).  If you have ever written a rest api before then you will read about GraphQL and just smile.  Think of it like SQL for Rest.  It is still completely rest under the covers and rest clients can call it still but it adds a whole lot more.  It is a superset of rest.  Plus it's self documenting and you get this great api portal built in. This app is part of your api, not separate.  If you want the documentation, send a text/html content type, if you want to query the api send an application/json header. 
+I strongly recommend reading up on [GraphQL](http://graphql.org/).  If you have ever written a rest api before then you will read about GraphQL and just smile.  Think of it like SQL for rest.  It is still completely rest under the covers and rest clients can call it still but it adds a whole lot more.  It is a superset of rest.  Plus it's self documenting and you get this great api portal built in. This app is part of your api, not separate.  If you want the documentation, send a text/html content type, if you want to query the api send an application/json content type. 
 
 If you are new to GraphQL I suggest you read up a little before continuing.
 
@@ -94,7 +94,7 @@ That is it, seriously.  A couple of anonymous functions and using the excellent 
 So now put your service on Heroku or AWS etc and within around an hour we have a mock of our service that we can deploy and the UI developers can start using and the clients can test.
 
 # The Real Thing
-Now the api developers get to work on providing the real data.  In my sample I connected to a Mongo DB to get the data.  This goes in a new resolver then back in the express code we can either swap the endpoint for real data, or as I have done here provide two different endpoints, /mock for mock data and /graphql for real data.  Both use the same schema so a change in one requires a change in the other or we get a compile time error.  No more developes forgetting to update a wiki somewhere.
+Now the api developers get to work on providing the real data.  In my sample I connected to a Mongo DB to get the data.  This goes in a new resolver then back in the express code we can either swap the endpoint for real data, or as I have done here provide two different endpoints, /mock for mock data and /graphql for real data.  Both use the same schema so a change in one requires a change in the other or we get a compile time error and both have the GraphiQL interface with the exact same schema and comments.  No more developes forgetting to update a wiki somewhere.
 {% highlight javascript linenos %}
 MongoClient.connect(projectConfig.mongo, (err, database) => {
   if (err) {
