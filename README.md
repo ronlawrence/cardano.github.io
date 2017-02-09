@@ -46,6 +46,15 @@ git push -u origin branch-name
 * Look for comments and make any changes.
 * Once approved your changes will be merged and released then the branch deleted.
 
+### Running Locally
+Because we are use file watching, changes are added live so just save your change then refresh the browser to see changes.  Makes it easy to see your edits as they will look in the site.
+* [Install Docker](https://docs.docker.com/engine/installation/). 
+* Open a terminal at the root of the project.
+* Run `docker-compose up`
+* Open your browser at [http://0.0.0.0:8080](http://0.0.0.0:8080).
+* Make changes, save, refresh browser to see them.
+When you are finished in the terminal press CTRL-C to stop the server.
+
 ### Helpful Links
 [Github Markdown](https://help.github.com/categories/writing-on-github/)
 
