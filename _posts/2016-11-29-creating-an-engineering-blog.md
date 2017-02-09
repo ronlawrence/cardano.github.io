@@ -52,35 +52,35 @@ We wanted to add bootstrap styling and our own stylesheet.  You can take a look 
 
 [_layouts/default.html](https://github.com/cardano/cardano.github.io/blob/master/_layouts/default.html)
 
-```js
+{% highlight html linenos %}
 <head>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
   ...
 </head>  
-```
+{% endhighlight %}
 
-```js
+{% highlight html linenos %}
 <body>
   ...
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
-```
+{% endhighlight %}
 
 Next is and our logo so inside the assets folder (which is copied to the _site folder) I added an images folder with our favicon and logo then added this in the header.
 
-```js
+{% highlight html linenos %}
 <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
-```
+{% endhighlight %}
 
 then the logo svg in the Body
 
-```js
+{% highlight html linenos %}
 <a href="/" class="navbar-brand">
   <img src='/assets/images/cardano_logo.svg' />
 </a>
-```
+{% endhighlight %}
 
 ## SCSS
 You can also use SASS or SCSS files as Jekyll has a built in compiler.  Simply rename the main.css file to main.scss.  That's it.  Jekyll will place a compiled file in _site\assets\css\main.css. 
