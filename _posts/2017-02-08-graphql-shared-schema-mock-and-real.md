@@ -9,6 +9,12 @@ description: Using API driven design with GraphQL to create mock data for a sche
 
 This article is not a [GraphQL](http://graphql.org/) tutorial but rather focuses on the specific case of mocking data with GraphQL.  It discusses some investigations I did into using GraphQL to rapidly create a mock service which helps the consumers and producers to rapidly agree up the api schema then use that exact schema to create provide the real data as well as a portal where users can try it out. If you know all about this stuff then jump to [Setting up the Mocking](#setting-up-the-mocking) below, if not then read on to see how this is an efficient way to start projects.  
 
+<img src="/assets/images/post-images/graphiql.png" alt="GraphiQL" style="width: 60%;
+    display: block;
+    margin: 0 auto" />
+
+_GraphiQL allows you to easiy create and try your queries then copy the query to use as a standard json get request or post in your application._
+
 # Why API Driven Design and Why Graph QL
 Just as in the case of interface driven design in the world of Java or C#, API driven design means before any code is written the schema of the API has been agreed upon.  Providing mock data is quick and easy then allows the consumers to actually use the api and verify it is what they want.  This also means that both UI development can start before the real service is ready.
 
@@ -18,9 +24,9 @@ I strongly recommend reading up on [GraphQL](http://graphql.org/).  If you have 
 
 If you are new to GraphQL I suggest you read up a little before continuing.
 
-<img src="/assets/images/post-images/graphiql.png" alt="GraphiQL" style="width: 60%;
-    display: block;
-    margin: 0 auto" />
+## Star Wars
+Try the GraphQL stars wars api.  [Click this query](http://graphql.org/swapi-graphql/?query=%7B%0A%20%20allFilms(first%3A%201)%20%7B%0A%20%20%20%20films%20%7B%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20speciesConnection%20%7B%0A%20%20%20%20%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%20%20classification%0A%20%20%20%20%20%20%20%20%20%20%20%20averageHeight%0A%20%20%20%20%20%20%20%20%20%20%20%20homeworld%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20population%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=undefined) to open the GraphQL editor with a query ready to run.  Click the "Prettify" button to pretty format it, then hit the play button.  The query defines which fields you want from the API as well as filtering.  You can also get multiple results in one server request.
+ 
 
 # Setting up the Mocking
 Source code is available on [GitHub](https://github.com/chookie/graphql-mock).  
