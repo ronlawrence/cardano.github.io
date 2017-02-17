@@ -23,15 +23,13 @@ The quadratic programming problem is a common type of problem in optimisation an
 Keeping in mind that we did not want to optimize for performance too early, our initial approach was to take a 'brute force' approach to solving the second issue. We determine all possible combinations of investment assets, and evaluate each one of them to see if they satisfy our constraints and how well they score on the objective function. The winning solution is the one from all successful solutions that minimises the objective function value. The number of different combinations of assets can quickly explode[2], so this is where our performance concerns are coming from.
 
 We see broadly two ways in which we can increase performance:
-
-1. Ensure, through whatever means, that the brute force approach converges to a solution faster.
-2. Rewrite the problem so that we pass the selection of the optimal combination of assets to the optimisation package.
+* Ensure, through whatever means, that the brute force approach converges to a solution faster.
+* Rewrite the problem so that we pass the selection of the optimal combination of assets to the optimisation package.
 
 We decided to focus on the former first. The reason is that the second approach leads to a much more complex problem that is harder to solve[3]. Even then we have a few choices:
-
-1. Parallellize the problem as much as possible to benefit from multi core performance.
-2. Select an optimisation package that provides the best performance for each QP problem iteration.
-3. Distribute the calculation of different branches of the algorithm to different machines, likely in the cloud.
+* Parallellize the problem as much as possible to benefit from multi core performance.
+* Select an optimisation package that provides the best performance for each QP problem iteration.
+* Distribute the calculation of different branches of the algorithm to different machines, likely in the cloud.
 
 So far we have achieved substantial improvements by focussing on the first two. We have not starting a distributed approach yet, so I can't share any experiences on it yet.
 
