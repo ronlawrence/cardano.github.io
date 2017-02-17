@@ -104,15 +104,15 @@ In C# ```this``` keyword would refer to the current object. A function that want
 55
 ```
 
-
-# Hmm Interesting...
-## Putting a number in quotes, the rest of the numbers will be treated as strings and concatenated
+## Weak typing
+We can add number and string together for example.
 ```javascript
 > var x = "5" + 1 + 2
 512
 > var y = 1 + 2 + "5" + 6
 356
 ```
+Here we see that if we put a number in quotes, the rest of the numbers will be treated as strings and concatenated, while the previous numbers are treated as numbers. This is actually an interesting behaviour. JavaScript is smart enough to figure out what type of data we have and then make the necessary adjustments so that we don't have to redefine it. However, coming from a strongly typed language like C#, this behaviour irks me. In a strong typed language environment, the compiler will tell me right away that I'm trying to operate on two different data types. With JavaScript, I won't get any compilation error, but I could get a different result than what I expected. I know this is a rather weak argument. Developers should know the behaviour of the language they're using, but this kind of problem seems appropriate for this blog.
 
 
 # Conclusion
