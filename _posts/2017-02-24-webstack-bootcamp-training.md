@@ -9,6 +9,8 @@ description: Up-skilling the team in web technologies
 
 
 Content TBC
-# Gotchyas/minute
-Diving in at the dee pend with JavaScript frameworks really hits the peak of Gotchyas per minute.  Some of the 
+# Gotchas/minute
+Diving in at the deep end with JavaScript frameworks really hits the peak of Gotchas per minute.  Some of the 
 * Running CLI eslint through NPM requires a double set of -- npm run eslint -- --fix 
+
+4 labs per day
