@@ -25,6 +25,10 @@ this.handleClick = this.handleClick.bind(this);
 ```
 
 # Putting it all together
-The challenge when covering so much ground in so little time, is that memory leaks eventually leave you with a patchy imprint of the learning.  One way to tackle this is to create a summary of all the topics linked up as an *aide-memoire*.
+The challenge when covering so much ground in so little time, is that memory leaks eventually leave you with a patchy imprint of the learning.  As an *aide-memoire* I created a visual splash of all the libraries/frameworks that we covered:
+
+<img src="/assets/images/post-images/javascript-training-summary.png" alt="javascript-summary" style="width: 60%;
+    display: block;
+    margin: 0 auto" />
 
 
