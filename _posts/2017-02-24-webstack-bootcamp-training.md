@@ -9,7 +9,7 @@ description: Up-skilling the team in web technologies
 
 
 # 5 days of concentrated brain juice
-As you may have gathered from previous posts, Cardano Engineering's technical stack is moving to the JavaScript world.  We decided to upskill the whole team, on top of the 10% time, we needed a boost in the form of old fashioned classroom training away from the daily demands of the office.  I think I speak for the team when I say that we all appreciate the opportunity to add modern coding skills to our software engineering arsenal and applying them in upcoming projects.
+As you may have gathered from previous posts, Cardano Engineering's technical stack is moving to the JavaScript world.  We decided to upskill the whole team and on top of the 10% time, we needed a boost in the form of old fashioned classroom training away from the daily demands of the office.  I think I speak for the team when I say that we all appreciate the opportunity to add modern coding skills to our software engineering arsenal and to apply them in upcoming projects.
 
 We were really fortunate to have [Maurice](https://twitter.com/MauriceDB) as a trainer- he is experienced as a web consultant, trainer with an appreciation for our .Net background and a great guy to boot.  The content was customised for our needs, delivered in an engaging manner with up-to-the-minute tidbits to keep us informed on the latest trends in the JavaScript world.  Each topic had accompanying labs with Maurice on hand when we tripped or got lost.  We covered a lot of ground (4 labs per day), and I even dreamt in JavaScript for a few nights afterwards!
 
@@ -31,4 +31,5 @@ The challenge when covering so much ground in so little time, is that memory lea
     display: block;
     margin: 0 auto" />
 
-
+# Summarising
+We all had a fantastic week of learning.  The proof in the pudding is how we use our new-found skills in the office (and beyond).  More on that later...
