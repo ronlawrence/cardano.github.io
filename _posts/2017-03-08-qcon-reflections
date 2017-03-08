@@ -30,7 +30,7 @@ One thing I'd hoped to achieve was take away some lessons from failures or gotch
 
 My fascination of architectures behind household name products was also sated with a behind-the-scenes look at [Facebook Live](https://qconlondon.com/london-2017/presentation/scaling-facebook-live-videos-billion-users).  A blend of sensible standard streaming protocol choice, clever caching strategy, implemented in a scalable architecture allowed the team to go from hackathon concept to full production in four months!
 
-# Trends
+# Insight?
 When I sat down to digest the vast amount of information, I was overwhelmed.  How could I condense three days of techie goodness into any form insightful wisdom?  
 Technologies, languages, libraries, frameworks and products are evolving quickly, they allow us to stand on the shoulders of giants.  Yes, we should leverage the scale, the security, the X-factor but don't over-engineer.  Quoting from Spotify's [Kinshuk Mishra](https://qconlondon.com/london-2017/presentation/evolution-spotifys-ads-architecture): 
 _Think for tomorrow but solve for today_
