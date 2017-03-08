@@ -26,7 +26,7 @@ As I said above you can do this without installing or running locally just by co
 
 ## Docker
 **UPDATE FEB 2017** <br/>
-This can be even easier by [installing Docker](https://docs.docker.com/engine/installation/), no need to install anything else.  In the root of your project create a docker-compose file as below then in a terminal from teh project root run the command `docker-compose up` and jekyll will run connected live to your code.  Any changes will be automatically detected and redeployed as above. 
+This can be even easier by [installing Docker](https://docs.docker.com/engine/installation/), no need to install anything else.  In the root of your project create a docker-compose file as below then in a terminal from the project root run the command `docker-compose up` and jekyll will run connected live to your code.  Any changes will be automatically detected and redeployed as above. 
 
 {% highlight yml linenos %}
 version: '2'
@@ -42,7 +42,7 @@ services:
     ports:
       - "4000:4000"
 {% endhighlight %}
-Explaination:
+Explanation:
 * We are using the official Jekyll docker image which has Jekyl fully installed and ready to run.  When you first run this file it will be downloaded from [docker hub](https://hub.docker.com/r/jekyll/jekyll/).
 * We give a name to our running docker image so we can identify it when cleaning up.
 * Line 7 we mount our current directory as a volume or drive available within the container.  So Jekyll can see our files.
