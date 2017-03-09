@@ -49,6 +49,7 @@ git push -u origin branch-name
 ### Running Locally
 Because we are use file watching, changes are added live so just save your change then refresh the browser to see changes.  Makes it easy to see your edits as they will look in the site.
 * [Install Docker](https://docs.docker.com/engine/installation/). 
+* Install docker-compose (for linux: sudo apt install docker-compose)
 * Open a terminal at the root of the project.
 * Run `docker-compose up`
 * Open your browser at [http://0.0.0.0:8080](http://0.0.0.0:8080).
