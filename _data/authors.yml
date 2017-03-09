@@ -51,6 +51,10 @@ j.gleeson:
     name: Jim Gleeson
     web:
     photo: /assets/images/avatars/jim.png
+j.kidd:
+    name: John F kidd
+    web:
+    photo: /assets/images/avatars/jfk.png
 k.bouwman:
     name: Kees Bouwman
     web:
@@ -123,7 +127,3 @@ v.thong:
     name: Veliana Thong
     web:
     photo: /assets/images/avatars/veliana.png
-j.kidd:
-    name: John F kidd
-    web:
-    photo: /assets/images/avatars/jfk.png
