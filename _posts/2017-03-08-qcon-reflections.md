@@ -2,17 +2,17 @@
 layout: post
 title: QCon conference reflections 
 date: 2017-03-08
-author: Jason Lee
+author: j.lee
 categories: qcon conferences 
 description: Reflections on the state of software engineering industry at QCon
 ---
 
 
 # QCon
-This was my first experience of [QCon](https://qconlondon.com/).  I had seen some of the InfoQ material on the sister website and was hoping to see the quality reflected in the conference .  I was not disappointed.  The venue although cramped around the lifts and toilets was well presented and located.  I rate the food highly- the attention to quality here was evident: beverages in every break, decent snacks and a balanced tasty but healthy lunch.  Afterall if you don't have decent fuel in your engine, how can you expect the car to perform?  
+This was my first experience of [QCon](https://qconlondon.com/).  I had seen some of the InfoQ material on the sister website and was hoping to see the quality reflected in the conference.  I was not disappointed.  The venue although cramped around the lifts and toilets was well presented and located.  I rate the food highly- the attention to quality here was evident: beverages in every break, decent snacks and a balanced tasty but healthy lunch.  Afterall if you don't have decent fuel in your engine, how can you expect the car to perform?  
 
 # Tracks
-I'd been to other multi-day conferences where the tracks persisted across the whole duration, but here the tracks changed daily.  I thought this worked really well, to fulfil the goal of keeping up with technology in a broad way.
+I'd been to other multi-day conferences where the tracks persisted across the whole duration, but here the tracks changed daily.  I thought this worked really well, to fulfil the goal of keeping up with technology in a broad way.  Each track is owned by a SME, who selects the topics- they presented each track in the morning to help illustrate the day ahead.
 
 # Topics
 I felt spoilt for choice- throughout the day I had trouble choosing because so many were enticing.  I flitted between what would be applicable in the coming projects, genuine future gazing, geeking out on techy stuff and finding out about technologies I'd never heard of.
