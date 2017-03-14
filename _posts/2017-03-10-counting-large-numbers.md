@@ -15,7 +15,7 @@ The question reminded me those days where you need to read your processor bluepr
 
 Eric Horesnyi pointed to the paper "Counting Large Numbers of Events in Small Registers" (Morris 1978) which proposes a solution to the question. The simple idea is to rather than exactly counting the occurrences of events, one can count much larger numbers by accepting a small error rate. This is the similar sort of problem when picking between doubles or decimals. It all boils down to desired precision. Maybe the idea behind this is not really new or ground breaking. What intrigued me was that the ability to approach a problem by not strictly following the blueprints/rules but by looking at the requirements.
 
-Now let's begin the fun part if we try to answer the question using the methodology described in Morris 1978 paper it turns out the number of items you can count using an 8 bit register is around 130.000 items with a small amount of error. 
+Now let's begin the fun part. If we try to answer the question using the methodology described in Morris 1978 paper it turns out the number of items you can count using an 8 bit register is around 130.000 items with a small amount of error. 
 
 The calculations are easy to replicate using
 
@@ -30,3 +30,9 @@ v=255 gives 128331 as the maximum number items that can be counted. To give some
 <!--Insert Chart-->
 <img src="/assets/images/post-images/counting-chart.png" alt="Stored vs Retrieved" 
 style="width: 40%; max-width: 350px; display: block; margin: 0 auto" />
+
+##References
+[1] Counting Large Numbers of Events in Small Registers , Morris 1978. 
+
+[2] I will talk about the very interesing QConLondon 2007 presentation "The Move to AI: From HFT to Laplace Demon" by Albert Bifet, Eric Horesnyi in a later post.
+ 
