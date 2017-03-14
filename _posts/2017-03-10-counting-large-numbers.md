@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ""
+title: "Chasing the Requirements"
 date: 2017-03-10
 author: a.arikan
-description:  Counting Large Numbers in Small Registers
+description: Starting to design for well defined system specifications or well discovered requirements.
 categories: programming rules requirements
 ---
 
