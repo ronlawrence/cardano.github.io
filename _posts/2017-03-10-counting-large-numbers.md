@@ -21,8 +21,13 @@ The calculations are easy to replicate using
 
 <!--Insert Equation, -->
 
+<img src="/assets/images/post-images/counting-equation.png" alt="Counting Equation" 
+style="width: 60%; max-width: 350px;display: block;margin: 0 auto" />
+
 where a controls the precision and maximum count and v is the maximum number that can be stored. Plugging a=30 and 
 v=255 gives 128331 as the maximum number items that can be counted. To give some idea how the algorithm works I created below chart to demonstrate the difference between the stored, retrieved numbers and the error amount. X-axis shows the counter, Y-axis shows the stored number and the columns represent the actual count, retrieved number and the error between the two.
 
 <!--Insert Chart-->
 
+<img src="/assets/images/post-images/counting-chart.png" alt="Stored vs Retrieved" 
+style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
