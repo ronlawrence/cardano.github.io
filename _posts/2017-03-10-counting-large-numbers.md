@@ -7,6 +7,7 @@ description: Starting to design for well defined system specifications or well d
 categories: programming rules requirements
 ---
 
+
 This week I attended #QConLondon 2007 and it was really exciting to see lots of practitioners from all over the world sharing their experiences, fails and successes. There were very interesting streams of talks. However, I will focus on such a simple idea that may help us with the way we think about the problems we encounter every day.  The simple idea is not a new one or something that is revolutionary rather it is a different way of thinking about certain problems.
 
 During their talk Eric Horesnyi (@erichoresnyi) asked the simple question of "How many items can you count using an 8 bit register?". In the past having programmed various microprocessors and being dealt with micro optimisations in pursuit of getting the right code for the right clock cycle, I could relate to the problem. 
@@ -32,6 +33,6 @@ v=255 gives 128331 as the maximum number items that can be counted. To give some
 style="width: 40%; max-width: 350px; display: block; margin: 0 auto" />
 
 ### References
-* Counting Large Numbers of Events in Small Registers , Morris 1978. 
+* Morris, R., 1978. Counting large numbers of events in small registers. Communications of the ACM, 21(10), pp.840-842.
 * I will talk about the very interesing QCon London 2017 presentation "The Move to AI: From HFT to Laplace Demon" by Albert Bifet, Eric Horesnyi in a later post.
  
