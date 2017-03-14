@@ -31,8 +31,7 @@ v=255 gives 128331 as the maximum number items that can be counted. To give some
 <img src="/assets/images/post-images/counting-chart.png" alt="Stored vs Retrieved" 
 style="width: 40%; max-width: 350px; display: block; margin: 0 auto" />
 
-##References
-[1] Counting Large Numbers of Events in Small Registers , Morris 1978. 
-
-[2] I will talk about the very interesing QConLondon 2007 presentation "The Move to AI: From HFT to Laplace Demon" by Albert Bifet, Eric Horesnyi in a later post.
+### References
+* Counting Large Numbers of Events in Small Registers , Morris 1978. 
+* I will talk about the very interesing QCon London 2017 presentation "The Move to AI: From HFT to Laplace Demon" by Albert Bifet, Eric Horesnyi in a later post.
  
