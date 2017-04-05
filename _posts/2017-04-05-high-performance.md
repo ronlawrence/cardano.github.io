@@ -3,7 +3,7 @@ layout: post
 title: "High Performance in Managed Languages"
 date: 2017-04-05
 author: a.arikan
-description: 
+description: A discussion around the talk High performance Managed Languages by Martin Thompson at QCon London 2017
 categories: programming design algorithms performance cachelines cpu memory
 ---
 ## Do you really want to use a managed language?
@@ -31,7 +31,7 @@ public static void DoWork(string name, DateTime transactionDate, string scenario
 ```
 
 ## Conclusion
-I am sorry to tell this directly but it is not the language most of the time it is **you**. If you want your code to perform well then write it in a way that it actually performs well. Knowing how the code is executed, memory is accesed, identifying the bottlenecks and creating the right design for the problem will help you get a much better performance from your code. I still like C++ and also C# and I don't see them as alternatives to each other. Picking a language is a decision based on many parameters like, developers, available skills, requirements, platform that the code will run, architecture and so on. However whatever language is picked certain fundamental principles do not change and still valid and affects the performance of the application. 
+I am sorry to tell this directly but it is not the language, most of the time it is **you**. If you want your code to perform well then write it in a way that it actually performs well. Knowing how the code is executed, memory is accesed, identifying the bottlenecks and creating the right design for the problem will help you get a much better performance from your code. I still like C++ and also C# and I don't see them as alternatives to each other. Picking a language is a decision based on many parameters like, developers, available skills, requirements, platform that the code will run, architecture and so on. However whatever language is picked certain fundamental principles do not change and still valid and affects the performance of the application. 
 
 ## Fun Part
 In Martin Thompson's presentation I was really amazed to see the results about the performance of different memory access patterns. Average ns/op varies between 1 and 90 depending on the access pattern. 
