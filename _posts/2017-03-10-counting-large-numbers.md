@@ -30,7 +30,7 @@ v=255 gives 128331 as the maximum number items that can be counted. To give some
 
 <!--Insert Chart-->
 <img src="/assets/images/post-images/counting-chart.png" alt="Stored vs Retrieved" 
-style="width: 40%; max-width: 350px; display: block; margin: 0 auto" />
+style="width: 60%; display: block; margin: 0 auto" />
 
 ### References
 * Morris, R., 1978. Counting large numbers of events in small registers. Communications of the ACM, 21(10), pp.840-842.
