@@ -4,10 +4,9 @@ title: "High Performance in Managed Languages"
 date: 2017-04-05
 author: a.arikan
 description: 
-categories: programming design performance
+categories: programming design algorithms performance cachelines cpu memory
 ---
- 
-
+## Do you really want to use a managed language?
 Recently I have attended a very inspiring talk by [Martin Thompson](https://mechanical-sympathy.blogspot.co.uk/) at [QCon London](https://qconlondon.com/) titled [High performance Managed Languages](https://qconlondon.com/london-2017/presentation/high-performance-managed-languages). The title itself was very interesting in the sense that managed languages and high performance were not two words I would use together in the same sentence. The talk was very inspiring and I would suggest you to look at Martin Thompson's presentation for a good look at performance and some tips on how to get high performance. Personally I always maintained the idea of "the closer you get to the hardware, more faster your code runs". Knowing how hardware functions, helps developing high performing code. This way you can maintain the harmony between your code and the hardware. I think it is time for another car analogy. A super-car may be very powerful but if it is not driven by the right driver who can actually enable that high performance, the car will never perform well. We can think that the software is the driver and car is the hardware. A driver driving a car for the first time or driving a car that she is trained for will deliver different kind of performance. Having the managed runtime lying between your code and the CPU seems to create an isolation layer between the code you develop and the hardware. It almost gives the impression of having another driver in between the car and its driver. This often results in the fake sense of security that "someone" will deal with the hardware or the driving. 
 
 Developing in a native language will require different set of skills that you may not notice that you need them when developing in a managed language. I deliberately say  'you may not notice' as most of the time your code will run 'just fine' even though you don’t have a basic understanding of the fundamental concepts. In a native language you don't have much chance to survive without a good understanding of the fundamentals. This almost creates an entry barrier for native languages and sometimes a distraction for developers. The performance comes with a high cost. However people who are ready to pay this high cost get equipped with very valuable information.
@@ -31,7 +30,12 @@ public static void DoWork(string name, DateTime transactionDate, string scenario
 }
 ```
 
-In Martin Thompson's presentation I was really amazed to see the results about the performance of different memory access patterns. Average ns/op varies between 1 and 90 depending on the access pattern. I wanted to give it a go to see myself. How does, for example, cache lines matter and how does it affect the performance of my application. Let's assume we have a very large array,```int[64*1024*1024]```. Now we can look at the performance of two scenarios. 
+## Conclusion
+I am sorry to tell this directly but it is not the language most of the time it is **you**. If you want your code to perform well then write it in a way that it actually performs well. Knowing how the code is executed, memory is accesed, identifying the bottlenecks and creating the right design for the problem will help you get a much better performance from your code. I still like C++ and also C# and I don't see them as alternatives to each other. Picking a language is a decision based on many parameters like, developers, available skills, requirements, platform that the code will run, architecture and so on. However whatever language is picked certain fundamental principles do not change and still valid and affects the performance of the application. 
+
+## Fun Part
+In Martin Thompson's presentation I was really amazed to see the results about the performance of different memory access patterns. Average ns/op varies between 1 and 90 depending on the access pattern. 
+How does, for example, cache lines matter and how does it affect the performance of the application. I wanted to give it a go to see myself. Let's assume we have a very large array,```int[64*1024*1024]```. Now we can look at the performance of two scenarios. 
 
 * **Case 1:** Iterate over each element and make an operation on each 67.108.864 element. 
 * **Case 2:** Iterate over the same array by skipping 16 elements to make the same operation for 4.194.304 times.
@@ -48,7 +52,6 @@ I also got strange results like below where longer loop completed in shorter tim
 style="width: 60%; display: block; margin: 0 auto" />
  
 I used a modified version of [this](http://stackoverflow.com/questions/6396240/performance-when-generating-cpu-cache-misses) to produce the results. One of the modifications I made was to make sure that the second  loop skips a whole cache line. 
-
 
 ### References:
 * https://mariantines.com/2015/08/24/simd-support-in-net-framework/
