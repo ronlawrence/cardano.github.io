@@ -7,13 +7,12 @@ description:
 categories: high frequency, hardware performance, Laplace demon, data mining, machine learning, AI, moa, samoa
 ---
 
-
-I hope this will be my last post about QCon London 2017 (although there are still lots of interesting stuff to talk about). In this post I would like to talk about two very interesting talks at the conference showing two very different approaches about trading. One of them demonstrated the current state of high frequency traders. The other one was suggesting a new solution to the trading problem. First one was by Richard Croucher, "Coding for High Frequency Trading and other Financial Services applications" and the second one was by Albert Bifet and Eric Horesnyi, "From HFT to Laplace Demon".
-
-[Counting Large Numbers in Small Registers](2017-03-10-counting-large-numbers.md)
+I hope this will be my last post about QCon London 2017 (although there are still lots of interesting stuff to talk about). In this post I would like to talk about two very interesting talks at the conference showing two very different approaches to trading. One of them demonstrated the current state of high frequency trading. The other one was suggesting a new solution to the trading problem similar problem HFT tries to solve. First talk was by Richard Croucher, [Coding for High Frequency Trading and other Financial Services applications](https://qconlondon.com/london-2017/presentation/coding-for-high-frequency-trading) and the second one was by Albert Bifet and Eric Horesnyi, [From HFT to Laplace Demon](https://qconlondon.com/london-2017/presentation/hft-laplace-demon). 
 
 
-Current state of HFT is a technology race where there is a potential to 
+
+
+Current state of HFT is a technology race where there is a potential to hit physical limitations
 Customize everything to death.
 Prevent kernel libraries, stay in user space
 TCP/IP is not fast enough use Remote Direct Memory Access, 
@@ -22,6 +21,7 @@ Custom fibre, even micro waves are considered for super-fast transfer rates
 Getting closer to the exchanges to gain few nano seconds
 Hardware limitations use FPGA's 
 
+[Counting Large Numbers in Small Registers](2017-03-10-counting-large-numbers.md)
 
 On the other hand
 Instead of trying get in front of everyone else in the muscle race 
@@ -33,13 +33,11 @@ Rather than trying to be faster you can try to go infront of the race by playing
 --spark processes batches 1s latency
 --other one processes one by one, latency is around milliseconds
 
-
 FPGA's, RDMA instead of 
 
 Straight fiber between NY and Chicago to cut few milliseconds
 Then you go to speed of light in fiber or speed of light in air?
 10y ago, like formula, exclusive Race
-
 
 Latency = Propagation + Serialization + Processing
 
