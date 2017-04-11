@@ -71,6 +71,10 @@ m.conen:
     name: Maryn Conen
     web:
     photo: /assets/images/avatars/maryn.png
+m.cannon:
+    name: Matthew Cannon
+    web:
+    photo: /assets/images/avatars/matthew.png
 m.neep:
     name: Michael Neep
     web:
