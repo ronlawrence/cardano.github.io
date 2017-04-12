@@ -43,13 +43,13 @@ How does, for example, cache lines matter and how does it affect the performance
 Now the question is how long each loop take in milliseconds and how much time is spent per operation. If you look at below results you may notice that there is only few millisecond difference between the two loops. Now please look at below results and compare the time taken for both loops. Is it something you were expecting to see? Now look at nanoseconds taken for each operation, and notice which one is faster.
 
 <img src="/assets/images/post-images/cachelines1.png" alt="Loop performance" 
-style="width: 50%; max-width: 350px;display: block;margin: 0 auto" />
+style="width: 60%; max-width: 350px;display: block;margin: 0 auto" />
 
 
 I also got strange results like below where longer loop completed in shorter time. I guess this is due to both loops have same memory access cost and the variability comes from the performance of the operations.
 
 <img src="/assets/images/post-images/cachelines2.png" alt="Loop performance" 
-style="width: 60%; display: block; margin: 0 auto" />
+style="width: 60%; max-width: 350px;display: block;margin: 0 auto" />
  
 I used a modified version of [this](http://stackoverflow.com/questions/6396240/performance-when-generating-cpu-cache-misses) to produce the results. One of the modifications I made was to make sure that the second  loop skips a whole cache line. 
 
