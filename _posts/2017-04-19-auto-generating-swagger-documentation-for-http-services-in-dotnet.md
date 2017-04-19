@@ -105,7 +105,7 @@ The documentation magic happens in the CreateOptionsMessage, of course.
 
 To see if this works in Swagger:
 
-![documentation to swagger](../assets/images/post-images/documentation-to-swagger.png)
+![documentation to swagger](/assets/images/post-images/documentation-to-swagger.png)
 
 - Step 1 shows the (all) documentation endpoint, returning a JSON object. 
 - Step 2 shows that this JSON object is Swagger compatible. 
