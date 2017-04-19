@@ -3,8 +3,8 @@ layout: post
 title: "Auto-generating Swagger documentation for HTTP Services in .NET"
 date: 2017-04-19
 author: m.conen
-description: 
-categories: programming design swagger http services .net dotnet rest api documentation
+description: How to make Web API 2 code reflect intented response code and type
+categories: programming design swagger http services .net dotnet rest web api webapi documentation
 ---
 # Auto-generating Swagger documentation for HTTP Services in .NET
 
@@ -105,7 +105,7 @@ The documentation magic happens in the CreateOptionsMessage, of course.
 
 To see if this works in Swagger:
 
-![documentation to swagger](documentation to swagger.png)
+![documentation to swagger](../assets/images/post-images/documentation-to-swagger.png)
 
 - Step 1 shows the (all) documentation endpoint, returning a JSON object. 
 - Step 2 shows that this JSON object is Swagger compatible. 
