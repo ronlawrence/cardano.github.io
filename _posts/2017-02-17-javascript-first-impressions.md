@@ -83,7 +83,7 @@ hello
 ## Equality operators
 JavaScript has two kinds of equality operators:
 * strict equality using ===
-* loose equality using ==>
+* loose equality using ==
 
 Both equality compares two values for equality. The == operator is called _loose_ because two values may be considered the same even if they are of different type. The == equality converts both values to a common type (type coercion) before comparing the values. This can potentially hide bugs and many JavaScript basic tutorial articles recommends to always use === operator. If this is the case, why bother having two equality operators in the first place? I'm sure there's a reason why the == equality is introduced, but I haven't made it my priority to look into it.
 
