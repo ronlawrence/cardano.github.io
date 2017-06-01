@@ -15,7 +15,7 @@ LaunchDarkly is a feature flag rather than a feature toggle<sup>[[2]](https://la
 
 # Project environments
 By default LaunchDarkly provides 2 environments, Production and Test. This can be managed in <b>Account settings</b>
-<img src="/assets/images/post-images/launchdarkly-accountsettings.png" alt="account-settings" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
+<img src="/assets/images/post-images/launchdarkly-accountSettings.png" alt="account-settings" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
 
 
 # Feature flags
