@@ -15,7 +15,7 @@ LaunchDarkly is a feature flag rather than a feature toggle<sup>[[2]](https://la
 
 # Project environments
 By default LaunchDarkly provides 2 environments, Production and Test. This can be managed in <b>Account settings</b>
-<img src="/assets/images/post-images/launchdarkly-accountSettings.png" alt="account-settings" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
+![Screenshot](/assets/images/post-images/launchdarkly-accountSettings.png) />
 
 
 # Feature flags
@@ -28,8 +28,7 @@ Create a new feature flag by entering:
 </ul> 
 
 Note that Key is generated automatically as we type in Name. We can alter this if we're not happy with the auto generated Key. Before saving the flag, please make sure you're happy with the Key representation. As far as I'm aware, there's no way we can edit the Key once the flag is created. We will need to delete the whole flag and create a new one with the desirable Key representation. The Key is important here as it is going to be used in your application.  
-<img src="/assets/images/post-images/launchdarkly-createFeatureFlag.png" alt="create-feature-flag" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
-
+![Screenshot](/assets/images/post-images/launchdarkly-createFeatureFlag.png)
 
 # Using LaunchDarkly in your C# application
 
@@ -37,36 +36,36 @@ Note that Key is generated automatically as we type in Name. We can alter this i
 <li>First thing you need to do is install LaunchDarkly SDK using NuGet in the appropriate project of your C# solution.</li>
 
 ```csharp
-    Install-Package LaunchDarkly.Client
+Install-Package LaunchDarkly.Client
 ```
 
 <li> Import the LaunchDarkly package to your class.</li>
 
 ```csharp
-    using LaunchDarkly.Client;
+using LaunchDarkly.Client;
 ```
 
 <li>Create a new LdClient with your environment-specific SDK key. I'm using Production SDK key here.</li>
 
 ```csharp
-    var client = new LdClient("sdk-359e3cfa-6eb3-49c6-aa09-99e54a3880e9");
+var client = new LdClient("sdk-359e3cfa-6eb3-49c6-aa09-99e54a3880e9");
 ```
 
 <li>Create a user. I'm only interested in the user name and machine name. You can adjust this according to your need.</li>
 
 ```csharp
-    var user = User.WithKey(System.Environment.UserName)
-                   .AndSecondaryKey(System.Environment.MachineName);
+var user = User.WithKey(System.Environment.UserName)
+               .AndSecondaryKey(System.Environment.MachineName);
 ```
 
 <li>Retrieve LaunchDarkly toggle value.</li>
 
 ```csharp
-    var isEnabled = client.BoolVariation("calc-scenario-mappings-crud-buttons", user);
+var isEnabled = client.BoolVariation("calc-scenario-mappings-crud-buttons", user);
 ```
 
 <code>isEnabled</code> returns <code>true</code> if the feature flag is switched ON and returns <code>false</code> if the feature flag is switched OFF.
-<img src="/assets/images/post-images/launchdarkly-featureFlagOnOff.png" alt="feature-flag-on-off" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
+![Screenshot](/assets/images/post-images/launchdarkly-featureFlagOnOff.png) />
 
 
 <li>Use this <code>isEnabled</code> value where you want to enable or disable features in your application.</li>
@@ -79,13 +78,13 @@ I'm using LaunchDarkly in CALC to disable the CRUD buttons in Scenario Mappings 
 I'll run CALC with the feature flag first switched OFF and then switched ON so we can see the different effects. 
 
 On the left tab, we see that when the flag is switched OFF, the CRUD buttons are all disabled. On the right tab, when the flag is switched ON, the CRUD buttons are enabled.
-<img src="/assets/images/post-images/launchdarkly-calc.png" alt="calc" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
+![Screenshot](/assets/images/post-images/launchdarkly-calc.png) />
 
 <b>Dev console</b> shows the following when the flag is switched OFF
-<img src="/assets/images/post-images/launchdarkly-devConsoleFlagOff.png" alt="devconsole-flag-off" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
+![Screenshot](/assets/images/post-images/launchdarkly-devConsoleFlagOff.png) />
 
 When flag is switched ON
-<img src="/assets/images/post-images/launchdarkly-devConsoleFlagOn.png" alt="devconsole-flag-on" style="width: 60%; max-width: 350px; display: block; margin: 0 auto" />
+![Screenshot](/assets/images/post-images/launchdarkly-devConsoleFlagOn.png) />
 
 Note that the reason why the <b>Dev console</b> show 2 events is because we have 2 tab items (Index and Curve) in the Scenario Mappings screen.
 
