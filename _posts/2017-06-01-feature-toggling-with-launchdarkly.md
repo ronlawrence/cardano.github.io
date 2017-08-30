@@ -15,7 +15,7 @@ LaunchDarkly is a feature flag rather than a feature toggle<sup>[[2]](https://la
 
 # Project environments
 By default LaunchDarkly provides 2 environments, Production and Test. This can be managed in <b>Account settings</b>
-![Screenshot](/assets/images/post-images/launchdarkly-accountSettings.png) />
+![Screenshot](/assets/images/post-images/launchdarkly-accountSettings-censored.png) />
 
 
 # Feature flags
@@ -48,7 +48,7 @@ using LaunchDarkly.Client;
 <li>Create a new LdClient with your environment-specific SDK key. I'm using Production SDK key here.</li>
 
 ```csharp
-var client = new LdClient("sdk-359e3cfa-6eb3-49c6-aa09-99e54a3880e9");
+var client = new LdClient("sdk-123a4bcd-5ef6-78g0-hi12-34j56k7890l1");
 ```
 
 <li>Create a user. I'm only interested in the user name and machine name. You can adjust this according to your need.</li>
