@@ -35,34 +35,34 @@ Note that Key is generated automatically as we type in Name. We can alter this i
 <ol>
 <li>First thing you need to do is install LaunchDarkly SDK using NuGet in the appropriate project of your C# solution.</li>
 
-```csharp
+{% highlight javascript linenos %}
 Install-Package LaunchDarkly.Client
-```
+{% endhighlight %}
 
 <li> Import the LaunchDarkly package to your class.</li>
 
-```csharp
+{% highlight javascript linenos %}
 using LaunchDarkly.Client;
-```
+{% endhighlight %}
 
 <li>Create a new LdClient with your environment-specific SDK key. I'm using Production SDK key here.</li>
 
-```csharp
+{% highlight javascript linenos %}
 var client = new LdClient("sdk-123a4bcd-5ef6-78g0-hi12-34j56k7890l1");
-```
+{% endhighlight %}
 
 <li>Create a user. I'm only interested in the user name and machine name. You can adjust this according to your need.</li>
 
-```csharp
+{% highlight javascript linenos %}
 var user = User.WithKey(System.Environment.UserName)
                .AndSecondaryKey(System.Environment.MachineName);
-```
+{% endhighlight %}
 
 <li>Retrieve LaunchDarkly toggle value.</li>
 
-```csharp
+{% highlight javascript linenos %}
 var isEnabled = client.BoolVariation("calc-scenario-mappings-crud-buttons", user);
-```
+{% endhighlight %}
 
 <code>isEnabled</code> returns <code>true</code> if the feature flag is switched ON and returns <code>false</code> if the feature flag is switched OFF.
 ![Screenshot](/assets/images/post-images/launchdarkly-featureFlagOnOff.png) />
