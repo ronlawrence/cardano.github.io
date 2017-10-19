@@ -83,3 +83,14 @@ So if you see all the stacks in a degraded state, don't worry. Compass is still 
 And Rancher will gradually rebalance the containers when the host comes back (usually within 5 minutes):
 
 ![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A51%3A19.png?version=1&modificationDate=1508417478283&api=v2)
+
+
+# Conclusion
+
+<ul>
+    <li>Write your apps using a queue model (like RabbitMQ) for operations that <b>must</b> succeed</li>
+    <li>Write your apps to be fault tolerant</li>
+    <li>Write your apps to be stateless, or to keep state in Redis</li>
+    <li>Write retry logic into your calls, don't always assume they will succeed</li>
+    <li>Don't fear the Reaper</li>
+</ul>
