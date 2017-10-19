@@ -67,3 +67,19 @@ We are always exercising our failure recovery. If a container goes down, if an e
 
 It also encourages developers to build fault-tolerant apps, since they will need to survive this creative destruction in order to operate in our environment. If an app isn't tolerant of failure it won't work at all.
 
+
+# What does Rancher look like when a host is recycling?
+
+It looks pretty red and angry, in fact. But you'll notice the stats all say "Degraded", not "Stopped". They are still working, just at a reduced container count due to the missing host:
+
+![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A46%3A56.png?version=1&modificationDate=1508417215599&api=v2)
+
+
+So if you see all the stacks in a degraded state, don't worry. Compass is still running fine:
+
+![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A47%3A51.png?version=1&modificationDate=1508417270597&api=v2)
+
+
+And Rancher will gradually rebalance the containers when the host comes back (usually within 5 minutes):
+
+![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A51%3A19.png?version=1&modificationDate=1508417478283&api=v2)
