@@ -146,10 +146,10 @@ You might need to call an observable stream using the output of a previous one:
 
 {% highlight javascript %}
 
-const getTicker$ = Rx.Observable.of('USDGBP')
+const getTicker$ = (currencyPair) =>  Rx.Observable.of('GBPUSD:CUR')
 const getPriceForTicker$ = (ticker) => Rx.Observable.of(100)
 
-getTicker$
+getTicker$('GBPUSD')
   .switchMap(getPriceForTicker$)
   .subscribe(x => console.log(x))
 
