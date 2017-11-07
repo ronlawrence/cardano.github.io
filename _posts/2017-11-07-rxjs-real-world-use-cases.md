@@ -25,7 +25,7 @@ Rx.Observable.of('water')
 	.map(item => 'wine')
 	.subscribe(result => console.log(result))
 	
-// output: wine
+// output -> wine
 {% endhighlight %}
 
 This is the structure of an Rx 'program', you have a source observable which 'emits' items, in this case the string 'water', then we use the map operator to change 'water' to 'wine', then lastly we have the subscribe method. 
@@ -100,3 +100,58 @@ We could also have the case where we actually just want the fastest price. I.e p
 Rx.Observable.race(Bloomberg.getSpotPrice$(loonie), Reuters.getSpotPrice$(loonie))
   .subscribe(price => console.log(price))
 {% endhighlight %}
+
+***
+
+#### Solutions to common problems
+
+From an array emit items one by one: 
+
+{% highlight javascript %}
+Rx.Observable
+  .from([1,2,3])
+  .map(x => x * 3)
+  .subscribe(x => console.log(x))
+  
+// output -> 3, 6, 9
+{% endhighlight %}
+
+Or if you have an observable that emits a full array you can emit them one by one by using _concatAll_:
+
+{% highlight javascript %}
+Rx.Observable
+  .of([1,2,3])
+  .concatAll()
+  .map(x => x * 3)
+  .subscribe(x => console.log(x))
+  
+// output -> 3, 6, 9
+{% endhighlight %} 
+
+If you want to do the equivalent of a Promise.all or do multiple async requests and combine the results you can use _zip_.
+
+{% highlight javascript %}
+
+const getConversionRate$ = Rx.Observable.of(0.5)
+const getAmountToConvert$ = Rx.Observable.of(100)
+
+Rx.Observable
+  .zip(getConversionRate$, getAmountToConvert$, (rate, amount) => rate * amount)
+  .subscribe(x => console.log(x))
+  
+// output -> 50
+{% endhighlight %} 
+
+You might need to call an observable stream using the output of a previous one:
+
+{% highlight javascript %}
+
+const getTicker$ = Rx.Observable.of('USDGBP')
+const getPriceForTicker$ = (ticker) => Rx.Observable.of(100)
+
+getTicker$
+  .switchMap(getPriceForTicker$)
+  .subscribe(x => console.log(x))
+
+// output -> 100
+{% endhighlight %} 
