@@ -7,9 +7,10 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <!--Important for SEO -->
-  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+  <meta itemprop="description" name="description"
+        content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}"/>
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6907712/671986/css/fonts.css"/>
-  <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon' />
+  <link rel='shortcut icon' href='/assets/images/favicon.ico' type='image/x-icon'/>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="/assets/css/animate.css"/>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
@@ -18,65 +19,65 @@
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <!--Open graph for how cntent apears on linkd in and facebook etc-->
   <!-- https://developers.facebook.com/docs/sharing/webmasters#markup-->
-  <meta property="og:url"                content="{{ site.url }}" />
-  <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="{{ site.name }}" />
-  <meta property="og:description"        content="{{ site.description }}" />
-  <meta property="og:image:type"         content="image/jpeg" />
-  <meta property="og:image"              content="{{ site.url }}/assets/images/open-graph-image.png" />
+  <meta property="og:url" content="{{ site.url }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="{{ site.name }}"/>
+  <meta property="og:description" content="{{ site.description }}"/>
+  <meta property="og:image:type" content="image/jpeg"/>
+  <meta property="og:image" content="{{ site.url }}/assets/images/open-graph-image.png"/>
 </head>
 
 <body>
 
-  <header class="container">
-    <nav class="navbar navbar-default navbar-fixed-top cbp-af-header" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="/" class="navbar-brand">
-            <img src='/assets/images/cardano-logo.svg' alt='Cardano Logo'/>
-          </a>
-        </div>
+<header class="container">
+  <nav class="navbar navbar-default navbar-fixed-top cbp-af-header" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">
+          <img src='/assets/images/cardano-logo.svg' alt='Cardano Logo'/>
+        </a>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="site-navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/careers">Careers</a></li>
-          </ul>
-        </div>
-    </nav>
-  </header>
-
-
-  <div class="content container">
-    {{ content }}
-  </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="site-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
 
-  <footer class="container">
-    <div id="line"/>
-    <ul>
-      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      <li><a href="http://www.cardano.com">cardano.com</a></li>
-      <li><a href="http://github.com/cardano">github.com/cardano</a></li>
-      <li><a href="https://github.com/cardano/cardano.github.io">bloggers</a></li>
-      <li><a href="/blog/atom.xml">atom</a></li>
-    </ul>
-  </footer>
+<div class="content container">
+  {{ content }}
+</div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="/assets/scripts/classie.js"></script>
-  <script src="/assets/scripts/cbpAnimatedHeader.js"></script>
-  <script src="/assets/scripts/wow.js"></script>
-  <script src="/assets/scripts/fill-screen.js"></script>
-  <script src="/assets/scripts/initialise-animate.js"></script>
+
+<footer class="container">
+  <div id="line"/>
+  <ul>
+    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    <li><a href="http://www.cardano.com">cardano.com</a></li>
+    <li><a href="http://github.com/cardano">github.com/cardano</a></li>
+    <li><a href="https://github.com/cardano/cardano.github.io">bloggers</a></li>
+    <li><a href="/blog/atom.xml">atom</a></li>
+  </ul>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/assets/scripts/classie.js"></script>
+<script src="/assets/scripts/cbpAnimatedHeader.js"></script>
+<script src="/assets/scripts/wow.js"></script>
+<script src="/assets/scripts/fill-screen.js"></script>
+<script src="/assets/scripts/initialise-animate.js"></script>
 </body>
 
 </html>
