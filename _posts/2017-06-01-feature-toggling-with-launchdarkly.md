@@ -15,7 +15,7 @@ LaunchDarkly is a feature flag rather than a feature toggle<sup>[[2]](https://la
 
 # Project environments
 By default LaunchDarkly provides 2 environments, Production and Test. This can be managed in <b>Account settings</b>
-![Screenshot](/assets/images/post-images/launchdarkly-accountSettings-censored.png) />
+![Screenshot](/assets/images/post-images/launchdarkly-accountSettings-censored.png) 
 
 
 # Feature flags
@@ -35,37 +35,37 @@ Note that Key is generated automatically as we type in Name. We can alter this i
 <ol>
 <li>First thing you need to do is install LaunchDarkly SDK using NuGet in the appropriate project of your C# solution.</li>
 
-```csharp
+{% highlight csharp %}
 Install-Package LaunchDarkly.Client
-```
+{% endhighlight %}
 
 <li> Import the LaunchDarkly package to your class.</li>
 
-```csharp
+{% highlight csharp %}
 using LaunchDarkly.Client;
-```
+{% endhighlight %}
 
 <li>Create a new LdClient with your environment-specific SDK key. I'm using Production SDK key here.</li>
 
-```csharp
+{% highlight csharp %}
 var client = new LdClient("sdk-123a4bcd-5ef6-78g0-hi12-34j56k7890l1");
-```
+{% endhighlight %}
 
 <li>Create a user. I'm only interested in the user name and machine name. You can adjust this according to your need.</li>
 
-```csharp
+{% highlight csharp %}
 var user = User.WithKey(System.Environment.UserName)
                .AndSecondaryKey(System.Environment.MachineName);
-```
+{% endhighlight %}
 
 <li>Retrieve LaunchDarkly toggle value.</li>
 
-```csharp
+{% highlight csharp %}
 var isEnabled = client.BoolVariation("calc-scenario-mappings-crud-buttons", user);
-```
+{% endhighlight %}
 
 <code>isEnabled</code> returns <code>true</code> if the feature flag is switched ON and returns <code>false</code> if the feature flag is switched OFF.
-![Screenshot](/assets/images/post-images/launchdarkly-featureFlagOnOff.png) />
+![Screenshot](/assets/images/post-images/launchdarkly-featureFlagOnOff.png)
 
 
 <li>Use this <code>isEnabled</code> value where you want to enable or disable features in your application.</li>
@@ -78,13 +78,13 @@ I'm using LaunchDarkly in CALC to disable the CRUD buttons in Scenario Mappings 
 I'll run CALC with the feature flag first switched OFF and then switched ON so we can see the different effects. 
 
 On the left tab, we see that when the flag is switched OFF, the CRUD buttons are all disabled. On the right tab, when the flag is switched ON, the CRUD buttons are enabled.
-![Screenshot](/assets/images/post-images/launchdarkly-calc.png) />
+![Screenshot](/assets/images/post-images/launchdarkly-calc.png) 
 
 <b>Dev console</b> shows the following when the flag is switched OFF
-![Screenshot](/assets/images/post-images/launchdarkly-devConsoleFlagOff.png) />
+![Screenshot](/assets/images/post-images/launchdarkly-devConsoleFlagOff.png)
 
 When flag is switched ON
-![Screenshot](/assets/images/post-images/launchdarkly-devConsoleFlagOn.png) />
+![Screenshot](/assets/images/post-images/launchdarkly-devConsoleFlagOn.png)
 
 Note that the reason why the <b>Dev console</b> show 2 events is because we have 2 tab items (Index and Curve) in the Scenario Mappings screen.
 
