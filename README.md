@@ -16,8 +16,7 @@ Add Your Avatar
 ## Editing
 You can edit directly using [Github Markdown](https://help.github.com/categories/writing-on-github/) in Github or download the project and edit it, optionally run it locally as below but you don't have to.  Always work on a branch, not master.  Submit a pull request for approval then notify the Slack channel.  Your changes are deployed as soon as the pull request is merged.
 
-### Code Syntax
-
+### Code Syntax
 See other posts for the syntax used.
 
 ### Pictures
