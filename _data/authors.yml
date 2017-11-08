@@ -43,6 +43,10 @@ j.kidd:
     name: John F kidd
     web:
     photo: /assets/images/avatars/jfk.png
+j.ortiz:
+    name: Jose A Ortiz
+    web:
+    photo: /assets/images/avatars/joseortiz.png
 k.bouwman:
     name: Kees Bouwman
     web:
