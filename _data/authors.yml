@@ -15,6 +15,10 @@ e.barnardt:
     name: Eugene Barnardt
     web:
     photo: /assets/images/avatars/eugene.png
+e.caceres:
+    name: Esteban Sáenz Cáceres
+    web:
+    photo: /assets/images/avatars/esteban.png
 g.carpentieri:
     name: Giampietro Carpentieri
     web:
@@ -127,7 +131,3 @@ v.thong:
     name: Veliana Thong
     web:
     photo: /assets/images/avatars/veliana.png
-e.caceres:
-    name: Esteban Sáenz Cáceres
-    web:
-    photo: /assets/images/avatars/esteban.png    

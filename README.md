@@ -20,7 +20,8 @@ You can edit directly using [Github Markdown](https://help.github.com/categories
 See other posts for the syntax used.
 
 ### Pictures
-Add them to /assets/images/post-images/ then reference.  See other posts for examples.
+Add them to /assets/images/post-images/ then reference.  See other posts for examples. 
+* _Make sure you set the background of the image to transparent_
 
 ### Using GitHub
 * Create a new file in the GitHub UI.
