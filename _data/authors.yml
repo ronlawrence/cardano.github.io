@@ -1,8 +1,4 @@
 # Author details.
-a.coetzee:
-    name: Adele Coetzee
-    web:
-    photo: /assets/images/avatars/adele.png
 a.arikan:
     name: Ali Ferda Arikan
     web:
@@ -15,10 +11,6 @@ b.lozickaja:
     name: Beata Lozickaja
     web:
     photo: /assets/images/avatars/beata.png
-d.perkins:
-    name: David Perkins
-    web:
-    photo: /assets/images/avatars/david.png
 e.barnardt:
     name: Eugene Barnardt
     web:
@@ -43,10 +35,6 @@ j.crawley:
     name: James Crawley
     web:
     photo: /assets/images/avatars/james.png
-j.lee:
-    name: Jason Lee
-    web:
-    photo: /assets/images/avatars/jason.png
 j.gleeson:
     name: Jim Gleeson
     web:

@@ -1,3 +1,26 @@
 // Place your settings in this file to overwrite default and user settings.
 {
+  "spellchecker.language": "en_US",
+  "spellchecker.ignoreWordsList": [
+    "Cardano",
+    "cardano",
+    "blog",
+    "GitHub",
+    "dropdown",
+    "Blog",
+    "johnston",
+    "alison",
+    "WordPress",
+    "customise",
+    "Drupal",
+    "organisation"
+  ],
+  "spellchecker.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
+  "spellchecker.ignoreRegExp": [],
+  "spellchecker.ignoreFileExtensions": [],
+  "spellchecker.checkInterval": 5000
 }

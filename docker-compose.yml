@@ -13,6 +13,6 @@ services:
     working_dir: /usr/src/app
     command: sh -c 'jekyll serve -s /usr/src/app --watch'
     ports:
-      - "4000:8080"
+      - "8080:8080"
     restart: unless-stopped
 
