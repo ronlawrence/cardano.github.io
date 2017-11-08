@@ -87,6 +87,10 @@ p.getrouw:
     name: Pierre Getrouw
     web:
     photo: assets/images/avatars/pierre.png
+r.gallardo:
+    name: Ruben Gallardo
+    web:
+    photo: assets/images/avatars/ruben.png
 r.lopes:
     name: Ricardo Lopes
     web:
