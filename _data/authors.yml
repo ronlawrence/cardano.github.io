@@ -51,6 +51,14 @@ j.ortiz:
     name: Jose A Ortiz
     web:
     photo: /assets/images/avatars/joseortiz.png
+j.torres:
+    name: José Antonio Zumaquero Torres
+    web:
+    photo: /assets/images/avatars/zuma.png
+j.deflaux:
+    name: Julien Deflaux
+    web:
+    photo: /assets/images/avatars/julien.png
 k.bouwman:
     name: Kees Bouwman
     web:
@@ -131,7 +139,3 @@ v.thong:
     name: Veliana Thong
     web:
     photo: /assets/images/avatars/veliana.png
-j.torres:
-    name: José Antonio Zumaquero Torres
-    web:
-    photo: /assets/images/avatars/zuma.png
