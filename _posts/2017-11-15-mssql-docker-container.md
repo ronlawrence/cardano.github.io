@@ -7,11 +7,11 @@ categories: docker container mssql automation
 description: Running MS SQL Server in a Docker Container that will load local sql file and data from csv
 ---
 
-When developing locally on my machine I like to have a dev database that I can play with (=wipe out) with no impact to anyone, and why not loading my test data in it.
+When developing locally on my machine I like to have a dev database that I can play with (=wipe out) with no impact to anyone, and optionally load test data into it.
 
 The purpose of this post is to show how we can use Docker to launch a local instance of Ms SQL server that will ingest local SQL script and tables data from csv files.
 
-By extension it can be used for e2e teting as your database will have an expected state before running your tests, and will run in a container.
+By extension it can be used for e2e testing as your database will have an expected state before running your tests, and will run in a container.
 
 That's quite handy for API testing!
 
@@ -19,7 +19,7 @@ That's quite handy for API testing!
 
 # What is happening?
 
-The command ```docker-compose up``` launch locally (on windows or mac) the docker image  `microsoft/mssql-server-linux` and will excecute the queries in ```/table/*.sql``` , and import the data for each table in ```/data/*.csv``` 
+The command ```docker-compose up``` launches locally (on windows or mac) the docker image  `microsoft/mssql-server-linux` and will excecute the queries in ```/table/*.sql``` , and import the data for each table in ```/data/*.csv``` 
 
 Once started the databse is accessible at ```0.0.0.0:1433``` for local development, or even for integration/end to end tests.
 
