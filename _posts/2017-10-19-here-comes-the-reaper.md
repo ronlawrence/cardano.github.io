@@ -39,12 +39,12 @@ The Reaper is constructive destruction.
 
 The 'Reaper' takes the form of Azure Powershell deploy scripts that are checked into Github, and built on a cron schedule by Jenkins. Usually they run hourly, like so:
 
-![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A22%3A0.png?version=1&modificationDate=1508416210637&api=v2)
+![Screenshot](/assets/images/post-images/image2017-10-19 13_22_0.png)
 
 
 The Powershell scripts have the following steps:
 
-![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A23%3A31.png?version=1&modificationDate=1508416210927&api=v2)
+![Screenshot](/assets/images/post-images/image2017-10-19 13_23_31.png)
 
 
 The logical process flow is as follows:
@@ -72,17 +72,17 @@ It also encourages developers to build fault-tolerant apps, since they will need
 
 It looks pretty red and angry, in fact. But you'll notice the stats all say "Degraded", not "Stopped". They are still working, just at a reduced container count due to the missing host:
 
-![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A46%3A56.png?version=1&modificationDate=1508417215599&api=v2)
+![Screenshot](/assets/images/post-images/image2017-10-19 13_46_56.png)
 
 
 So if you see all the stacks in a degraded state, don't worry. Compass is still running fine:
 
-![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A47%3A51.png?version=1&modificationDate=1508417270597&api=v2)
+![Screenshot](/assets/images/post-images/image2017-10-19 13_47_51.png)
 
 
 And Rancher will gradually rebalance the containers when the host comes back (usually within 5 minutes):
 
-![Screenshot](http://confluence:8090/download/attachments/17596484/image2017-10-19%2013%3A51%3A19.png?version=1&modificationDate=1508417478283&api=v2)
+![Screenshot](/assets/images/post-images/image2017-10-19 13_51_19.png)
 
 
 # Conclusion
